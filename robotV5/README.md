@@ -1,1 +1,6 @@
 # sirop_bot
+
+
+Init
+=======
+
