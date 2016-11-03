@@ -1,6 +1,1 @@
 # sirop_bot
-
-
-Init
-=======
-
