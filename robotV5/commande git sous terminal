@@ -24,4 +24,8 @@ permet de configurer les proxy à l'upmc
 export http_proxy=http://@proxyweb.upmc.fr:3128
 export https_proxy = $http_proxy
 
-
+Procédure pour ajouter des évolutions :
+1. git pull -> recuperer le projet en local
+2. git commit -m"test de modif de reseau.txt" -> pour valider un fichier et ajouter des commentaires
+3. git add nomdufichierajouter -> SI BESOIN
+4. git push origin -> l'envoyer sur le serveur github
