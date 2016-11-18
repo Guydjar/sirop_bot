@@ -7,8 +7,8 @@
 #include <arpa/inet.h>
 #include <string.h>
 #include <math.h>
-//#include "../Serveur/config.h"
-//#include "../API_Client/client.h"
+#include "../Serveur/config.h"
+#include "../API_Client/client.h"
 
 
 #define VERSION 1
@@ -85,7 +85,7 @@ int main (int argc, char **argv)
 
 		else if (scan_zone_res.type_scan[0]==1) // Mur
 		{
-			move(1,teta -10* (M_PI/180)));
+			move(1,teta -10* (M_PI/180));
 		}
 		
 		else // Pas d'obstacle

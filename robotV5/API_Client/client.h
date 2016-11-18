@@ -46,6 +46,17 @@ typedef struct {
 // Définition des Fonctions 
 //////////////////////////////////////////////////////////////
 
+// Initialisation des connexions TCP/IP
+// prend en paramètre :
+//	- un nom de robot
+//	- l'adresse ip du serveur pour la connexion
+//	- le port pour la connexion
+// renvoie id du joueur, renvoie -1 si problème de connexion, code d'erreur à préciser par la suite*/
+int init_connexion(char *nom, char *ip,int port);
+
+//A commenter
+void close_connexion();
+
 // Fonction permet de récupérer la position d'un robot:
 // pas de parametre
 // renvoie une structure s_robot*/
