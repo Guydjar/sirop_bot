@@ -1,4 +1,4 @@
-// Version 3.3 du 03/011/16
+// Version 3.4 du 13/011/16
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -239,26 +239,78 @@ int init_graphique(context_video* context)
                 return -1;
             }
 
-            // Load message text
+           // Load message text
             SDL_Color Black = {0, 0, 0,255};  // this is the color in rgb format, maxing out all would give you the color white, and it will be your text's color
             //SDL_Color Red = {0, 0, 0,255};  // this is the color in rgb format, maxing out all would give you the color white, and it will be your text's color
             //SDL_Color Blue = {0, 0, 255,78};  // this is the color in rgb format, maxing out all would give you the color white, and it will be your text's color
 
             SDL_Surface* surfaceMessage = TTF_RenderText_Solid(context->font[1], "START", Black); // as TTF_RenderText_Solid could only be used on SDL_Surface then you have to create the surface first
             context->text[0]->message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage); //now you can convert it into a texture
-            SDL_Rect Rectmessage3 = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+((LARGEUR_SCORE-surfaceMessage->w)/2),HAUTEUR_TERRAIN+(2*MARGE_ECRAN)+(((HAUTEUR_LOG/2)-surfaceMessage->h)/2),surfaceMessage->w,surfaceMessage->h};
+            SDL_Rect Rectmessage3 = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+((LARGEUR_SCORE-surfaceMessage->w)/2),HAUTEUR_TERRAIN+(1.5*MARGE_ECRAN)-(((HAUTEUR_LOG/2)+surfaceMessage->h)/2),surfaceMessage->w,surfaceMessage->h};
             context->text[0]->Rect = Rectmessage3;
             context->text[0]->w = surfaceMessage->w;
             context->text[0]->h = surfaceMessage->h;
             SDL_FreeSurface(surfaceMessage); // Free sprite
+
+
+           surfaceMessage = TTF_RenderText_Solid(context->font[3], "HELP", Black); // as TTF_RenderText_Solid could only be used on SDL_Surface then you have to create the surface first
+            context->text[6]->message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage); //now you can convert it into a texture
+            SDL_Rect Rectmessage8 = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(MARGE_ECRAN/2)+(LARGEUR_SCORE/2)+(((LARGEUR_SCORE/2)-surfaceMessage->w)/2),HAUTEUR_TERRAIN+(2*MARGE_ECRAN)+(((HAUTEUR_LOG/2)-surfaceMessage->h)/2),surfaceMessage->w,surfaceMessage->h};
+            context->text[6]->Rect = Rectmessage8;
+            context->text[6]->w = surfaceMessage->w;
+            context->text[6]->h = surfaceMessage->h;
+            SDL_FreeSurface(surfaceMessage); // Free sprite  
+
+           surfaceMessage = TTF_RenderText_Solid(context->font[3], "DEBUG MODE", Black); // as TTF_RenderText_Solid could only be used on SDL_Surface then you have to create the surface first
+            context->text[7]->message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage); //now you can convert it into a texture
+            SDL_Rect Rectmessage2 = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(((LARGEUR_SCORE/2)-surfaceMessage->w)/2),HAUTEUR_TERRAIN+(2*MARGE_ECRAN)+(((HAUTEUR_LOG/2)-surfaceMessage->h)/2),surfaceMessage->w,surfaceMessage->h};
+            context->text[7]->Rect = Rectmessage2;
+            context->text[7]->w = surfaceMessage->w;
+            context->text[7]->h = surfaceMessage->h;
+            SDL_FreeSurface(surfaceMessage); // Free sprite  
+            
             surfaceMessage = TTF_RenderText_Solid(context->font[1], "QUIT", Black); // as TTF_RenderText_Solid could only be used on SDL_Surface then you have to create the surface first
             context->text[1]->message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage); //now you can convert it into a texture
-            SDL_Rect Rectmessage4 = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+((LARGEUR_SCORE-surfaceMessage->w)/2),HAUTEUR_TERRAIN+(2*MARGE_ECRAN)+(HAUTEUR_LOG/2)+(((HAUTEUR_LOG/2)-surfaceMessage->h)/2),surfaceMessage->w,surfaceMessage->h};
+            SDL_Rect Rectmessage4 = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+((LARGEUR_SCORE-surfaceMessage->w)/2),HAUTEUR_TERRAIN+(2*MARGE_ECRAN)+(MARGE_ECRAN/2)+(HAUTEUR_LOG/2)+(((HAUTEUR_LOG/2)-surfaceMessage->h)/2),surfaceMessage->w,surfaceMessage->h};
             context->text[1]->Rect = Rectmessage4;
             context->text[1]->w = surfaceMessage->w;
             context->text[1]->h = surfaceMessage->h;
-
             SDL_FreeSurface(surfaceMessage); // Free sprite
+            
+            surfaceMessage = TTF_RenderText_Solid(context->font[3], "Level I", Black); // as TTF_RenderText_Solid could only be used on SDL_Surface then you have to create the surface first
+            context->text[3]->message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage); //now you can convert it into a texture
+            SDL_Rect Rectmessage5 = {LARGEUR_TERRAIN+(3*MARGE_ECRAN)+((surfaceMessage->w)/2),MARGE_ECRAN+(((HAUTEUR_LOG/2)-surfaceMessage->h)/2)+(HAUTEUR_TERRAIN/2),surfaceMessage->w,surfaceMessage->h};
+            context->text[3]->Rect = Rectmessage5;
+            context->text[3]->w = surfaceMessage->w;
+            context->text[3]->h = surfaceMessage->h;
+            SDL_FreeSurface(surfaceMessage); // Free sprite
+            
+            
+            surfaceMessage = TTF_RenderText_Solid(context->font[3], "Level II", Black); // as TTF_RenderText_Solid could only be used on SDL_Surface then you have to create the surface first
+            context->text[4]->message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage); //now you can convert it into a texture
+            SDL_Rect Rectmessage6 = {LARGEUR_TERRAIN+(3*MARGE_ECRAN)+(((LARGEUR_SCORE)+surfaceMessage->w)/2),MARGE_ECRAN+(((HAUTEUR_LOG/2)-surfaceMessage->h)/2)+(HAUTEUR_TERRAIN/2),surfaceMessage->w,surfaceMessage->h};
+            context->text[4]->Rect = Rectmessage6;
+            context->text[4]->w = surfaceMessage->w;
+            context->text[4]->h = surfaceMessage->h;
+            SDL_FreeSurface(surfaceMessage); // Free sprite
+            
+            surfaceMessage = TTF_RenderText_Solid(context->font[3], "Level III", Black); // as TTF_RenderText_Solid could only be used on SDL_Surface then you have to create the surface first
+            context->text[5]->message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage); //now you can convert it into a texture
+            SDL_Rect Rectmessage7 = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+((surfaceMessage->w)/2),(MARGE_ECRAN)+(HAUTEUR_TERRAIN/2)+(HAUTEUR_LOG/2)+(((HAUTEUR_LOG/2)-surfaceMessage->h)/2),surfaceMessage->w,surfaceMessage->h};
+            context->text[5]->Rect = Rectmessage7;
+            context->text[5]->w = surfaceMessage->w;
+            context->text[5]->h = surfaceMessage->h;
+            SDL_FreeSurface(surfaceMessage); // Free sprite
+           
+            surfaceMessage = TTF_RenderText_Solid(context->font[3], "Level IV", Black); // as TTF_RenderText_Solid could only be used on SDL_Surface then you have to create the surface first
+            context->text[2]->message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage); //now you can convert it into a texture
+            SDL_Rect Rectmessage9 = {LARGEUR_TERRAIN+(3*MARGE_ECRAN)+(((LARGEUR_SCORE)+surfaceMessage->w)/2),(MARGE_ECRAN)+(HAUTEUR_TERRAIN/2)+(HAUTEUR_LOG/2)+(((HAUTEUR_LOG/2)-surfaceMessage->h)/2),surfaceMessage->w,surfaceMessage->h};
+            context->text[2]->Rect = Rectmessage9;
+            context->text[2]->w = surfaceMessage->w;
+            context->text[2]->h = surfaceMessage->h;
+            SDL_FreeSurface(surfaceMessage); // Free sprite
+
+         
         }
         else
         {
@@ -285,9 +337,28 @@ void draw_score_update(context_video* context,s_robot *tab_robot)
 
     SDL_SetRenderDrawColor(context->pRenderer, 245, 245 ,165, 255);
 
-    SDL_Rect score = {LARGEUR_TERRAIN+(2*MARGE_ECRAN),MARGE_ECRAN,LARGEUR_SCORE,HAUTEUR_TERRAIN};//It's a rectangle  , size 250*250 and position (0;0)
+    SDL_Rect score = {LARGEUR_TERRAIN+(2*MARGE_ECRAN),MARGE_ECRAN,LARGEUR_SCORE,(HAUTEUR_TERRAIN/2)-(MARGE_ECRAN)};//It's a rectangle  , size 250*250 and position (0;0)
     SDL_RenderFillRect(context->pRenderer,&score);//To draw one rectangle
 
+ // LEVEL CHOICE
+ /*   sprintf(buffer,"DEFAULT LEVEL: I\n");
+    for(i=0;i<NB_ROBOT_MAX;i++)
+    {
+        if(tab_robot[i].exist == 1)
+        {
+            sprintf(buffer2,"%s\n",tab_robot[i].name);
+            strcat(buffer,buffer2);
+        }
+    }
+    SDL_Surface *surfaceMessage = TTF_RenderText_Blended_Wrapped(context->font[BUBBLE], buffer, Black,195);
+    SDL_Texture *Message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage);
+
+    SDL_Rect title_name = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+5,MARGE_ECRAN+5,surfaceMessage->w,surfaceMessage->h}; //create a rect
+    SDL_RenderCopy(context->pRenderer,Message, NULL, &title_name); //you put the renderer's name first
+    SDL_DestroyTexture(Message); // Free Texture
+    SDL_FreeSurface(surfaceMessage); // Free sprite
+    */
+    
     // Create liste of name
     sprintf(buffer,"Name player\n");
     for(i=0;i<NB_ROBOT_MAX;i++)
@@ -301,7 +372,7 @@ void draw_score_update(context_video* context,s_robot *tab_robot)
     SDL_Surface *surfaceMessage = TTF_RenderText_Blended_Wrapped(context->font[BUBBLE], buffer, Black,195);
     SDL_Texture *Message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage);
 
-    SDL_Rect title_name = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+5,MARGE_ECRAN+5,surfaceMessage->w,surfaceMessage->h}; //create a rect
+    SDL_Rect title_name = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+5,2*MARGE_ECRAN,surfaceMessage->w,surfaceMessage->h}; //create a rect
     SDL_RenderCopy(context->pRenderer,Message, NULL, &title_name); //you put the renderer's name first
     SDL_DestroyTexture(Message); // Free Texture
     SDL_FreeSurface(surfaceMessage); // Free sprite
@@ -319,7 +390,7 @@ void draw_score_update(context_video* context,s_robot *tab_robot)
     surfaceMessage = TTF_RenderText_Blended_Wrapped(context->font[BUBBLE], buffer, Black,100);
     Message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage);
 
-    SDL_Rect title_life = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+200,MARGE_ECRAN+5,surfaceMessage->w,surfaceMessage->h}; //create a rect
+    SDL_Rect title_life = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+200,2*MARGE_ECRAN,surfaceMessage->w,surfaceMessage->h}; //create a rect
     SDL_RenderCopy(context->pRenderer,Message, NULL, &title_life); //you put the renderer's name first
 
     // Free surface and texture
@@ -362,14 +433,51 @@ void draw_button(context_video* context)
 {
 
     // Bouton START
-    SDL_SetRenderDrawColor(context->pRenderer, 197, 224 ,180, 255);
-    SDL_Rect start = {LARGEUR_TERRAIN+(2*MARGE_ECRAN),HAUTEUR_TERRAIN+(2*MARGE_ECRAN),LARGEUR_SCORE,HAUTEUR_LOG/2};//It's a rectangle  , size 250*250 and position (0;0)
+    SDL_SetRenderDrawColor(context->pRenderer, 0, 220 ,0, 255);
+    SDL_Rect start = {LARGEUR_TERRAIN+(2*MARGE_ECRAN),HAUTEUR_TERRAIN+MARGE_ECRAN-(HAUTEUR_LOG/2)+(MARGE_ECRAN/2),LARGEUR_SCORE,(HAUTEUR_LOG/2)-(MARGE_ECRAN/2)};//It's a rectangle  , size 250*250 and position (0;0)
     SDL_RenderFillRect(context->pRenderer,&start);//To draw one rectangle
     SDL_RenderCopy(context->pRenderer, context->text[0]->message, NULL, &context->text[0]->Rect); //you put the renderer's name first
+    
+ 
+    // Bouton Niveau1
+    SDL_SetRenderDrawColor(context->pRenderer, 0, 140 ,255, 255);
+    SDL_Rect niveau1 = {LARGEUR_TERRAIN+(2*MARGE_ECRAN),MARGE_ECRAN+(HAUTEUR_TERRAIN/2),(LARGEUR_SCORE/2)-(MARGE_ECRAN/2),(HAUTEUR_LOG/2)-(MARGE_ECRAN)}; //It's a rectangle  , size 250*250 and position (0;0)
+    SDL_RenderFillRect(context->pRenderer,&niveau1);//To draw one rectangle
+    SDL_RenderCopy(context->pRenderer, context->text[3]->message, NULL, &context->text[3]->Rect); //you put the renderer's name first
+ 
+    // Bouton Niveau2
+    SDL_SetRenderDrawColor(context->pRenderer, 0, 140 ,255, 255);
+    SDL_Rect niveau2 = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(MARGE_ECRAN/2)+(LARGEUR_SCORE/2),MARGE_ECRAN+(HAUTEUR_TERRAIN/2),(LARGEUR_SCORE/2)-(MARGE_ECRAN/2),(HAUTEUR_LOG/2)-MARGE_ECRAN}; //It's a rectangle  , size 250*250 and position (0;0)
+    SDL_RenderFillRect(context->pRenderer,&niveau2);//To draw one rectangle
+    SDL_RenderCopy(context->pRenderer, context->text[4]->message, NULL, &context->text[4]->Rect); //you put the renderer's name first
+    
+    // Bouton Niveau3
+    SDL_SetRenderDrawColor(context->pRenderer, 0, 140 ,246, 255);
+    SDL_Rect niveau3 = {LARGEUR_TERRAIN+(2*MARGE_ECRAN),(MARGE_ECRAN)+(HAUTEUR_TERRAIN/2)+(HAUTEUR_LOG/2),(LARGEUR_SCORE/2)-(MARGE_ECRAN/2),(HAUTEUR_LOG/2)-(MARGE_ECRAN)};//It's a rectangle  , size 250*250 and position (0;0)
+    SDL_RenderFillRect(context->pRenderer,&niveau3);//To draw one rectangle
+    SDL_RenderCopy(context->pRenderer, context->text[5]->message, NULL, &context->text[5]->Rect); //you put the renderer's name first
+    
+    // Bouton Niveau4
+    SDL_SetRenderDrawColor(context->pRenderer, 0, 140 ,246, 255);
+    SDL_Rect niveau4 = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(MARGE_ECRAN/2)+(LARGEUR_SCORE/2),(MARGE_ECRAN)+(HAUTEUR_TERRAIN/2)+(HAUTEUR_LOG/2),(LARGEUR_SCORE/2)-(MARGE_ECRAN/2),(HAUTEUR_LOG/2)-MARGE_ECRAN};//It's a rectangle  , size 250*250 and position (0;0)
+    SDL_RenderFillRect(context->pRenderer,&niveau4);//To draw one rectangle
+    SDL_RenderCopy(context->pRenderer, context->text[2]->message, NULL, &context->text[2]->Rect); //you put the renderer's name first
+    
+    // Bouton Help
+    SDL_SetRenderDrawColor(context->pRenderer, 255, 160 ,30, 255);
+    SDL_Rect help = {LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(MARGE_ECRAN/2)+(LARGEUR_SCORE/2),(HAUTEUR_TERRAIN)+(2*MARGE_ECRAN),(LARGEUR_SCORE/2)-(MARGE_ECRAN/2),(HAUTEUR_LOG/2)-(MARGE_ECRAN/2)};//It's a rectangle  , size 250*250 and position (0;0)
+    SDL_RenderFillRect(context->pRenderer,&help);//To draw one rectangle
+    SDL_RenderCopy(context->pRenderer, context->text[6]->message, NULL, &context->text[6]->Rect); //you put the renderer's name first
+
+    // Bouton Debug
+    SDL_SetRenderDrawColor(context->pRenderer, 255, 160 ,30, 255);
+    SDL_Rect debug = {LARGEUR_TERRAIN+(2*MARGE_ECRAN),(HAUTEUR_TERRAIN)+(2*MARGE_ECRAN),(LARGEUR_SCORE/2)-(MARGE_ECRAN/2),(HAUTEUR_LOG/2)-(MARGE_ECRAN/2)};//It's a rectangle  , size 250*250 and position (0;0)
+    SDL_RenderFillRect(context->pRenderer,&debug);//To draw one rectangle
+    SDL_RenderCopy(context->pRenderer, context->text[7]->message, NULL, &context->text[7]->Rect); //you put the renderer's name first
 
     // bouton QUIT
-    SDL_SetRenderDrawColor(context->pRenderer, 255, 157 ,157, 255);
-    SDL_Rect quit = {LARGEUR_TERRAIN+(2*MARGE_ECRAN),HAUTEUR_TERRAIN+(2*MARGE_ECRAN)+(HAUTEUR_LOG/2),LARGEUR_SCORE,HAUTEUR_LOG/2};//It's a rectangle  , size 250*250 and position (0;0)
+    SDL_SetRenderDrawColor(context->pRenderer, 255, 9 ,0, 255);
+    SDL_Rect quit = {LARGEUR_TERRAIN+(2*MARGE_ECRAN),HAUTEUR_TERRAIN+(2*MARGE_ECRAN)+(HAUTEUR_LOG/2)+(MARGE_ECRAN/2),LARGEUR_SCORE,(HAUTEUR_LOG/2)-(MARGE_ECRAN/2)};//It's a rectangle  , size 250*250 and position (0;0)
     SDL_RenderFillRect(context->pRenderer,&quit);//To draw one rectangle
     SDL_RenderCopy(context->pRenderer, context->text[1]->message, NULL, &context->text[1]->Rect); //you put the renderer's name first
 }
@@ -535,7 +643,7 @@ void refresh_screen_init(context_video* context,s_robot *tab_robot,int nbplayeur
 
     SDL_Surface* surfaceMessage = TTF_RenderText_Solid(context->font[WORLD], "Welcome to Sirop Bot Project", Black); // as TTF_RenderText_Solid could only be used on SDL_Surface then you have to create the surface first
     SDL_Texture* Message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage); //now you can convert it into a texture
-    SDL_Rect Message_wait_rect = {(LARGEUR_TERRAIN-surfaceMessage->w)/2,HAUTEUR_TERRAIN/5-(surfaceMessage->h/2),surfaceMessage->w,surfaceMessage->h}; //creat
+    SDL_Rect Message_wait_rect = {(LARGEUR_TERRAIN-surfaceMessage->w)/2,10*(HAUTEUR_TERRAIN/50)-(surfaceMessage->h/2),surfaceMessage->w,surfaceMessage->h}; //creat
     SDL_RenderCopy(context->pRenderer, Message, NULL, &Message_wait_rect); //you put the renderer's name firste a rect
     SDL_DestroyTexture(Message); // Free texture
     SDL_FreeSurface(surfaceMessage); // free sprite
@@ -544,19 +652,29 @@ void refresh_screen_init(context_video* context,s_robot *tab_robot,int nbplayeur
 
     surfaceMessage = TTF_RenderText_Solid(context->font[WORLD], player_connected, Black); // as TTF_RenderText_Solid could only be used on SDL_Surface then you have to create the surface first
     Message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage); //now you can convert it into a texture
-    SDL_Rect Message_wait2_rect = {(LARGEUR_TERRAIN-surfaceMessage->w)/2,2*(HAUTEUR_TERRAIN/5)-(surfaceMessage->h/2),surfaceMessage->w,surfaceMessage->h}; //create a rect
+    SDL_Rect Message_wait2_rect = {(LARGEUR_TERRAIN-surfaceMessage->w)/2,20*(HAUTEUR_TERRAIN/50)-(surfaceMessage->h/2),surfaceMessage->w,surfaceMessage->h}; //create a rect
     SDL_RenderCopy(context->pRenderer, Message, NULL, &Message_wait2_rect); //you put the renderer's name firste a rect
     SDL_DestroyTexture(Message); // free texture
     SDL_FreeSurface(surfaceMessage); // free sprite
 
-    surfaceMessage = TTF_RenderText_Solid(context->font[WORLD], "Press start after client connection", Black); // as TTF_RenderText_Solid could only be used on SDL_Surface then you have to create the surface first
+    surfaceMessage = TTF_RenderText_Solid(context->font[WORLD], "Select LEVEL then", Black);
     Message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage); //now you can convert it into a texture
-    SDL_Rect Message_wait3_rect = {(LARGEUR_TERRAIN-surfaceMessage->w)/2,3*(HAUTEUR_TERRAIN/5)-(surfaceMessage->h/2),surfaceMessage->w,surfaceMessage->h}; //create a rect
+    SDL_Rect Message_wait3_rect = {(LARGEUR_TERRAIN-surfaceMessage->w)/2,35*(HAUTEUR_TERRAIN/50)-(surfaceMessage->h/2),surfaceMessage->w,surfaceMessage->h}; //create a rect
     SDL_RenderCopy(context->pRenderer, Message, NULL, &Message_wait3_rect); //you put the renderer's name firste a rect
 
     SDL_DestroyTexture(Message); // free texture
     SDL_FreeSurface(surfaceMessage); // freesprite
-	SDL_RenderPresent(context->pRenderer); // Affichage
+	
+	
+	
+    surfaceMessage = TTF_RenderText_Solid(context->font[WORLD], "press START or DEBUG MODE", Black); // as TTF_RenderText_Solid could only be used on SDL_Surface then you have to create the surface first
+    Message = SDL_CreateTextureFromSurface(context->pRenderer, surfaceMessage); //now you can convert it into a texture
+    SDL_Rect Message_wait4_rect = {(LARGEUR_TERRAIN-surfaceMessage->w)/2,42*(HAUTEUR_TERRAIN/50)-(surfaceMessage->h/2),surfaceMessage->w,surfaceMessage->h}; //create a rect
+    SDL_RenderCopy(context->pRenderer, Message, NULL, &Message_wait4_rect); //you put the renderer's name firste a rect
+
+    SDL_DestroyTexture(Message); // free texture
+    SDL_FreeSurface(surfaceMessage); // freesprite
+    SDL_RenderPresent(context->pRenderer); // Affichage
 }
 
 // Start screen
@@ -602,13 +720,13 @@ int close_graphique(context_video* context)
 	for(i=0;i<NB_ROBOT_MAX;i++)
         SDL_DestroyTexture((SDL_Texture*)context->pRobot[i]);
     free(context->pRobot);
-    for(i=0;i<5;i++)
+    for(i=0;i<7;i++)
         SDL_DestroyTexture((SDL_Texture*)context->text[i]->message);
     free(context->text);
 
     SDL_DestroyTexture(context->pTourelle); // free texture
-	SDL_DestroyTexture(context->pMissile); // free texture
-	SDL_DestroyTexture(context->pWarZone); // freetexture
+		SDL_DestroyTexture(context->pMissile); // free texture
+		SDL_DestroyTexture(context->pWarZone); // freetexture
     SDL_DestroyRenderer(context->pRenderer); // free SDL_Renderer
     SDL_DestroyWindow(context->pWindow);
 

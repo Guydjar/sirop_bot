@@ -1,0 +1,69 @@
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ERROR: system call:bind Errno=98 exiting pid=3275
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ERROR: system call:bind Errno=98 exiting pid=3445
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0
+ INFO: Semaphore  ::ok:111
+ INFO: shared memory  ::ok:111
+ INFO: quit ::TEST:0

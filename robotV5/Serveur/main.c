@@ -1,4 +1,4 @@
-// Version 3.5 du 03/11/16
+// Version 3.6 du 13/11/16
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -44,16 +44,16 @@ void init_context(context_video* Context)
 	Context->font = NULL;
 	Context->font = (TTF_Font**) malloc(5*sizeof(TTF_Font*));
 	Context->text = NULL;
-	Context->text = (message_texture**) malloc(5*sizeof(message_texture*));
+	Context->text = (message_texture**) malloc(8*sizeof(message_texture*));
 
 	// Allocate memory
-	for(i=0;i<5;i++)
+	for(i=0;i<8;i++)
 	{
 		Context->text[i] = (message_texture*) malloc(sizeof(message_texture));
 		Context->text[i]->message = NULL;
 	}
 	// Init log
-	for(i=0;i<10;i++)
+	for(i=0;i<7;i++)
 	{
 		sprintf(Context->tab_log[i]," ");
 	}
@@ -74,6 +74,8 @@ int main(int argc, char **argv)
 	int tempsPrecedent = 0, tempsActuel = 0;
 	int continuer = 1;
 	int wait = 1;
+	int debugmode=0;
+	int level = 1;
 	int nb_player = 0;
     char cmd[15];
     int port = 0;
@@ -168,11 +170,12 @@ int main(int argc, char **argv)
 					// Start button
 					if(event.button.x>(LARGEUR_TERRAIN+(2*MARGE_ECRAN)) && event.button.x<(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+LARGEUR_SCORE))
 					{
-						if(event.button.y>(HAUTEUR_TERRAIN+(2*MARGE_ECRAN)) && event.button.y<(HAUTEUR_TERRAIN+(2*MARGE_ECRAN)+(HAUTEUR_LOG/2)))
+						if(event.button.y>(HAUTEUR_TERRAIN+(MARGE_ECRAN)+(MARGE_ECRAN/2)-(HAUTEUR_LOG/2)) && event.button.y<(HAUTEUR_TERRAIN+(MARGE_ECRAN)))
 						{
 							wait = 0;
 						}
 					}
+
 					// Quit button
 					if(event.button.x>(LARGEUR_TERRAIN+(2*MARGE_ECRAN)) && event.button.x<(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+LARGEUR_SCORE))
 					{
@@ -182,6 +185,63 @@ int main(int argc, char **argv)
 							continuer = 0;
 						}
 					}
+
+					// LEVEL I button				
+					if(event.button.x>(LARGEUR_TERRAIN+(2*MARGE_ECRAN)) && event.button.x<((LARGEUR_TERRAIN)+(2*MARGE_ECRAN)+(LARGEUR_SCORE/2)-(MARGE_ECRAN/2)))
+					{
+						if(event.button.y>((MARGE_ECRAN)+(HAUTEUR_TERRAIN/2)) && event.button.y<((MARGE_ECRAN)+(HAUTEUR_TERRAIN/2)+(HAUTEUR_LOG/2)-(MARGE_ECRAN/2)))
+						{
+							level=1;
+						}
+						
+					}
+								
+					// LEVEL II button			
+					if(event.button.x>(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(MARGE_ECRAN/2)+(LARGEUR_SCORE/2)) && event.button.x<(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(LARGEUR_SCORE)))
+					{
+						if(event.button.y>((MARGE_ECRAN)+(HAUTEUR_TERRAIN/2)) && event.button.y<((MARGE_ECRAN)+(HAUTEUR_TERRAIN/2)+(HAUTEUR_LOG/2)-(MARGE_ECRAN/2)))
+						{
+							level=2;
+						}
+					}
+				
+					// LEVEL III button				
+					if(event.button.x>(LARGEUR_TERRAIN+(2*MARGE_ECRAN)) && event.button.x<(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(LARGEUR_SCORE/2)-(MARGE_ECRAN/2)))
+					{
+						if(event.button.y>((MARGE_ECRAN)+(HAUTEUR_TERRAIN/2)+(HAUTEUR_LOG/2)) && event.button.y<(((MARGE_ECRAN)+(HAUTEUR_TERRAIN/2)+(HAUTEUR_LOG)-(MARGE_ECRAN/2))))
+						{
+							level=3;
+						}
+						
+					}
+				
+					// LEVEL IV button
+					if(event.button.x>(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(MARGE_ECRAN/2)+(LARGEUR_SCORE/2)) && event.button.x<(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(LARGEUR_SCORE)))
+					{
+						if(event.button.y>((MARGE_ECRAN)+(HAUTEUR_TERRAIN/2)+(HAUTEUR_LOG/2)) && event.button.y<(((MARGE_ECRAN)+(HAUTEUR_TERRAIN/2)+(HAUTEUR_LOG)-(MARGE_ECRAN/2))))
+						{
+							level=4;
+						}
+					}
+
+					// DEBUG MODE button
+					if(event.button.x>(LARGEUR_TERRAIN+(2*MARGE_ECRAN)) && event.button.x<(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(LARGEUR_SCORE/2)-(MARGE_ECRAN/2)))
+					{
+						if(event.button.y>((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)) && event.button.y<(((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)+(HAUTEUR_LOG/2)-(MARGE_ECRAN/2))))
+						{
+							debugmode=1;
+							wait = 0;
+						}
+					}
+					// HELP button
+					if(event.button.x>(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(MARGE_ECRAN/2)+(LARGEUR_SCORE/2)) && event.button.x<(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(LARGEUR_SCORE)))
+					{
+						if(event.button.y>((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)) && event.button.y<(((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)+(HAUTEUR_LOG/2)-(MARGE_ECRAN/2))))
+						{
+							wait = 0;
+						}
+					}
+
 				}
 				break;
 			default:
@@ -229,8 +289,18 @@ int main(int argc, char **argv)
 
 	//////////////////////////////////////////////////// Variable et commande pour flo ////////////////////////////////////////////////////////
 	//initialisation des robots
-	tab_robot[9].exist = 1;
-	sprintf(tab_robot[9].name,"The beast");
+	switch(debugmode)
+  	{
+	 	case 0:
+			tab_robot[9].exist = 0;
+
+		break;
+
+		case 1:
+			tab_robot[9].exist = 1;
+			sprintf(tab_robot[9].name,"The beast");
+		break;
+	}
 
 
 	/*simu_move_robot(tab_robot,7,0.8,135*M_PI/180);
@@ -241,16 +311,60 @@ int main(int argc, char **argv)
 	simu_missile_shoot(tab_robot, 0, tab_missile,0);
 	simu_missile_shoot(tab_robot, 1, tab_missile,-M_PI);
 */
+	
+
 	//initialisation des murs
 	srand(time(NULL));
+	switch(level)
+  	{
+	 	case 1:
+		//mur level 1
+			creer_mur(tab_mur,0,HAUTEUR_TERRAIN/2,LARGEUR_TERRAIN/2,HAUTEUR_TERRAIN/2);
+			creer_mur(tab_mur,LARGEUR_TERRAIN/2,HAUTEUR_TERRAIN/4,LARGEUR_TERRAIN,HAUTEUR_TERRAIN/4);
+			creer_mur(tab_mur,LARGEUR_TERRAIN/2,3*HAUTEUR_TERRAIN/4,LARGEUR_TERRAIN,3*HAUTEUR_TERRAIN/4);                         
+	  	break;
 
+		case 2:
+		//mur level 2
+			creer_mur(tab_mur,20*LARGEUR_TERRAIN/100,HAUTEUR_TERRAIN,20*LARGEUR_TERRAIN/100,HAUTEUR_TERRAIN/2);
+			creer_mur(tab_mur,40*LARGEUR_TERRAIN/100,0,40*LARGEUR_TERRAIN/100,HAUTEUR_TERRAIN/2);
+			creer_mur(tab_mur,60*LARGEUR_TERRAIN/100,HAUTEUR_TERRAIN,60*LARGEUR_TERRAIN/100,HAUTEUR_TERRAIN/2);
+			creer_mur(tab_mur,80*LARGEUR_TERRAIN/100,0,80*LARGEUR_TERRAIN/100,HAUTEUR_TERRAIN/2);
+			break;
+	
+	 	case 3:
+		//mur level 3
+			creer_mur(tab_mur,50*LARGEUR_TERRAIN/100,70*HAUTEUR_TERRAIN/100,50*LARGEUR_TERRAIN/100,30*HAUTEUR_TERRAIN/100);
+			creer_mur(tab_mur,30*LARGEUR_TERRAIN/100,50*HAUTEUR_TERRAIN/100,70*LARGEUR_TERRAIN/100,50*HAUTEUR_TERRAIN/100);
+			creer_mur(tab_mur,15*LARGEUR_TERRAIN/100,70*HAUTEUR_TERRAIN/100,15*LARGEUR_TERRAIN/100,30*HAUTEUR_TERRAIN/100);
+			creer_mur(tab_mur,30*LARGEUR_TERRAIN/100,15*HAUTEUR_TERRAIN/100,70*LARGEUR_TERRAIN/100,15*HAUTEUR_TERRAIN/100);
+			creer_mur(tab_mur,85*LARGEUR_TERRAIN/100,70*HAUTEUR_TERRAIN/100,85*LARGEUR_TERRAIN/100,30*HAUTEUR_TERRAIN/100);
+			creer_mur(tab_mur,30*LARGEUR_TERRAIN/100,85*HAUTEUR_TERRAIN/100,70*LARGEUR_TERRAIN/100,85*HAUTEUR_TERRAIN/100);
+		                
+	  	break;
 
-	creer_mur(tab_mur,0,0,0,HAUTEUR_TERRAIN);
-	creer_mur(tab_mur,0,HAUTEUR_TERRAIN,LARGEUR_TERRAIN,HAUTEUR_TERRAIN);
-	creer_mur(tab_mur,LARGEUR_TERRAIN,HAUTEUR_TERRAIN,LARGEUR_TERRAIN,0);
-	creer_mur(tab_mur,LARGEUR_TERRAIN,0,0,0);
+		case 4:
+		//mur level 4
+			creer_mur(tab_mur,0,HAUTEUR_TERRAIN,25*LARGEUR_TERRAIN/100,75*HAUTEUR_TERRAIN/100);
+			creer_mur(tab_mur,0,0,25*LARGEUR_TERRAIN/100,25*HAUTEUR_TERRAIN/100);
+			creer_mur(tab_mur,LARGEUR_TERRAIN,HAUTEUR_TERRAIN,75*LARGEUR_TERRAIN/100,75*HAUTEUR_TERRAIN/100);
+			creer_mur(tab_mur,LARGEUR_TERRAIN,0,75*LARGEUR_TERRAIN/100,25*HAUTEUR_TERRAIN/100);
+		
+			creer_mur(tab_mur,0,50*HAUTEUR_TERRAIN/100,30*LARGEUR_TERRAIN/100,50*HAUTEUR_TERRAIN/100);
+			creer_mur(tab_mur,LARGEUR_TERRAIN,50*HAUTEUR_TERRAIN/100,70*LARGEUR_TERRAIN/100,50*HAUTEUR_TERRAIN/100);
+			creer_mur(tab_mur,50*LARGEUR_TERRAIN/100,HAUTEUR_TERRAIN,50*LARGEUR_TERRAIN/100,75*HAUTEUR_TERRAIN/100);
+			creer_mur(tab_mur,50*LARGEUR_TERRAIN/100,0,50*LARGEUR_TERRAIN/100,25*HAUTEUR_TERRAIN/100);
 
-    int x_all,y_all,x_fin_all,y_fin_all;
+			creer_mur(tab_mur,35*LARGEUR_TERRAIN/100,65*HAUTEUR_TERRAIN/100,65*LARGEUR_TERRAIN/100,35*HAUTEUR_TERRAIN/100);
+			creer_mur(tab_mur,65*LARGEUR_TERRAIN/100,65*HAUTEUR_TERRAIN/100,35*LARGEUR_TERRAIN/100,35*HAUTEUR_TERRAIN/100);
+		
+		
+		break;
+		default:
+    	break;
+  	}
+
+/*    int x_all,y_all,x_fin_all,y_fin_all;
     //Murs aléatoires distance et pente 100% aléatoire
     if (DIST_WALL_INIT == -1)
     {
@@ -279,18 +393,22 @@ int main(int argc, char **argv)
             creer_mur(tab_mur,x_all,y_all,x_all-x_fin_all,y_all+y_fin_all);
         }
     }
-    //creer_mur(tab_mur,500,450,500,350);
-	//creer_mur(tab_mur,150,150,250,250);
-	//creer_mur(tab_mur,600,570,800,390);
-	//creer_mur(tab_mur,25,450,300,350);
-	//creer_mur(tab_mur,400,200,550,100);
-	//creer_mur(tab_mur,0,100,200,100);
-	//creer_mur(tab_mur,400,0,400,300);
+ */
 
 	// Robot manuel
 	float vitesse_man = 0;
 
 ////////////////////////////////////////////////////// Fin commande flo /////////////////////////////////////////////////////////////////////
+
+/***************************************	Test	****************************************/
+
+
+
+
+
+
+/***************************************	Fin Test	****************************************/
+
 
 
 while(continuer)
@@ -310,6 +428,17 @@ while(continuer)
 					{
 						if(event.button.y>(HAUTEUR_TERRAIN+(2*MARGE_ECRAN)+(HAUTEUR_LOG/2)) && event.button.y<(HAUTEUR_TERRAIN+(2*MARGE_ECRAN)+HAUTEUR_LOG))
 						{
+							continuer = 0;
+						}
+					}
+
+
+					// Quit button
+					if(event.button.x>(LARGEUR_TERRAIN+(2*MARGE_ECRAN)) && event.button.x<(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+LARGEUR_SCORE))
+					{
+						if(event.button.y>(HAUTEUR_TERRAIN+(2*MARGE_ECRAN)+(HAUTEUR_LOG/2)) && event.button.y<(HAUTEUR_TERRAIN+(2*MARGE_ECRAN)+HAUTEUR_LOG))
+						{
+							wait = 0;
 							continuer = 0;
 						}
 					}
@@ -352,40 +481,40 @@ for (i=0; i<8; i++)
 						printf("status_result=%d\n",stat);
 					break;
 
-					case SDLK_z:
+					case SDLK_UP:
 						simu_move_robot(tab_robot,9,vitesse_man,M_PI/2);
 					break;
-					case SDLK_s:
+					case SDLK_DOWN:
 						simu_move_robot(tab_robot,9,vitesse_man,-M_PI/2);
 					break;
-					case SDLK_q:
+					case SDLK_LEFT:
 						simu_move_robot(tab_robot,9,vitesse_man,M_PI);
 					break;
-					case SDLK_d:
+					case SDLK_RIGHT:
 						simu_move_robot(tab_robot,9,vitesse_man,0);
 					break;
-					case SDLK_j:
+					case SDLK_KP_6:
 						simu_missile_shoot(tab_robot, 9, tab_missile,0);
 					break;
-					case SDLK_k:
+					case SDLK_KP_8:
 						simu_missile_shoot(tab_robot, 9, tab_missile,M_PI/2);
 					break;
-					case SDLK_l:
+					case SDLK_KP_4:
 						simu_missile_shoot(tab_robot, 9, tab_missile,M_PI);
 					break;
-					case SDLK_h:
+					case SDLK_KP_2:
 						simu_missile_shoot(tab_robot, 9, tab_missile,-M_PI/2);
 					break;
-					case SDLK_UP:
+					case SDLK_KP_9:
 						simu_missile_shoot(tab_robot, 9, tab_missile,M_PI/4);
 					break;
-					case SDLK_LEFT:
+					case SDLK_KP_7:
 						simu_missile_shoot(tab_robot, 9, tab_missile,3*M_PI/4);
 					break;
-					case SDLK_RIGHT:
+					case SDLK_KP_3:
 						simu_missile_shoot(tab_robot, 9, tab_missile,-M_PI/4);
 					break;
-					case SDLK_DOWN:
+					case SDLK_KP_1:
 						simu_missile_shoot(tab_robot, 9, tab_missile,-3*M_PI/4);
 					break;
 					case SDLK_t:
