@@ -311,7 +311,11 @@ int main(int argc, char **argv)
 	simu_missile_shoot(tab_robot, 0, tab_missile,0);
 	simu_missile_shoot(tab_robot, 1, tab_missile,-M_PI);
 */
-	
+	//initialisation des murs exterieurs
+	creer_mur(tab_mur,0,0,0,HAUTEUR_TERRAIN);
+	creer_mur(tab_mur,0,HAUTEUR_TERRAIN,LARGEUR_TERRAIN,HAUTEUR_TERRAIN);
+	creer_mur(tab_mur,LARGEUR_TERRAIN,HAUTEUR_TERRAIN,LARGEUR_TERRAIN,0);
+	creer_mur(tab_mur,LARGEUR_TERRAIN,0,0,0);
 
 	//initialisation des murs
 	srand(time(NULL));
@@ -454,11 +458,11 @@ while(continuer)
 					case SDLK_p:
 						simu_move_robot(tab_robot,9,vitesse_man,tab_robot[9].teta+0.1);
 					break;
-					case SDLK_x:
+					case SDLK_b:
 						teta_scan = teta_scan + 10.0/180.0*M_PI;
 						printf("teta_scan = %f\n",teta_scan);
 					break;
-					case SDLK_w:
+					case SDLK_v:
 						teta_scan = teta_scan - 10.0/180.0*M_PI;
 						printf("teta_scan = %f\n",teta_scan);
 					break;
@@ -476,7 +480,7 @@ for (i=0; i<8; i++)
 	printf("zone %d = %f\n",i+1,tab_robot[9].scan_all.zone_distance[i]);
 }
 					break;
-                    case SDLK_c:
+                   			case SDLK_n:
 						stat = simu_get_status(tab_robot,tab_mur,tab_missile,9);
 						printf("status_result=%d\n",stat);
 					break;
@@ -496,27 +500,59 @@ for (i=0; i<8; i++)
 					case SDLK_KP_6:
 						simu_missile_shoot(tab_robot, 9, tab_missile,0);
 					break;
+					case SDLK_d:
+						simu_missile_shoot(tab_robot, 9, tab_missile,0);
+					break;
+
 					case SDLK_KP_8:
 						simu_missile_shoot(tab_robot, 9, tab_missile,M_PI/2);
 					break;
+					case SDLK_z:
+						simu_missile_shoot(tab_robot, 9, tab_missile,M_PI/2);
+					break;
+
 					case SDLK_KP_4:
 						simu_missile_shoot(tab_robot, 9, tab_missile,M_PI);
 					break;
+					case SDLK_q:
+						simu_missile_shoot(tab_robot, 9, tab_missile,M_PI);
+					break;
+
 					case SDLK_KP_2:
 						simu_missile_shoot(tab_robot, 9, tab_missile,-M_PI/2);
 					break;
+					case SDLK_x:
+						simu_missile_shoot(tab_robot, 9, tab_missile,-M_PI/2);
+					break;
+
 					case SDLK_KP_9:
 						simu_missile_shoot(tab_robot, 9, tab_missile,M_PI/4);
 					break;
+					case SDLK_e:
+						simu_missile_shoot(tab_robot, 9, tab_missile,M_PI/4);
+					break;
+
 					case SDLK_KP_7:
 						simu_missile_shoot(tab_robot, 9, tab_missile,3*M_PI/4);
 					break;
+					case SDLK_a:
+						simu_missile_shoot(tab_robot, 9, tab_missile,3*M_PI/4);
+					break;
+
 					case SDLK_KP_3:
 						simu_missile_shoot(tab_robot, 9, tab_missile,-M_PI/4);
 					break;
+					case SDLK_c:
+						simu_missile_shoot(tab_robot, 9, tab_missile,-M_PI/4);
+					break;
+
 					case SDLK_KP_1:
 						simu_missile_shoot(tab_robot, 9, tab_missile,-3*M_PI/4);
 					break;
+					case SDLK_w:
+						simu_missile_shoot(tab_robot, 9, tab_missile,-3*M_PI/4);
+					break;
+
 					case SDLK_t:
 						vitesse_man = 0;
 					break;

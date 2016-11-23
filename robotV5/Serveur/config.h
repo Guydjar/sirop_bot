@@ -29,7 +29,7 @@
 //mur
 #define NB_WALL_ALLOWED 1000 //Nombre de murs maximum pouvant etre créés
 #define MUR_DESTRUC_DIST RAYON_ROBOT // distance de destruction du mur
-#define WALL_DESTRUCTION_ALLOWED 1 //autorisation de la detruction des murs
+#define WALL_DESTRUCTION_ALLOWED 0 //autorisation de la detruction des murs
 #define NB_WALL_INIT 9 //NB de mur à l'init (hors murs extérieurs (Terrain)
 #define DIST_WALL_INIT -1 //Distance des murs -1 pour aléatoire
 
