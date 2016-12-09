@@ -1,0 +1,31 @@
+git clone git clone https://github.com/Guydjar/sirop_bot.git
+cloner le projet
+
+git status
+connaitre le statut (ecart des fichiers)
+
+git commit -m"test de modif de reseau.txt"
+pour valider un fichier
+
+git push
+l'envoyer sur le serveur github
+
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+configurer si pb nom utilisateur
+
+git pull
+recuperer le projet en local
+
+git add nomdufichierajouter
+ajouter un fichier
+
+permet de configurer les proxy à l'upmc
+export http_proxy=http://@proxyweb.upmc.fr:3128
+export https_proxy = $http_proxy
+
+Procédure pour ajouter des évolutions :
+1. git pull -> recuperer le projet en local
+2. git commit -m"test de modif de reseau.txt" -> pour valider un fichier et ajouter des commentaires
+3. git add nomdufichierajouter -> SI BESOIN
+4. git push origin -> l'envoyer sur le serveur github
