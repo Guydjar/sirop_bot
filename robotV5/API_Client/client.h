@@ -1,6 +1,7 @@
-// Version 3.5 du 03/11/16
-
-//Contient tous les prototypes et les structures des fonctions pour les clients
+/**
+*  \version 3.5 du 03/11/16
+*  \Contient tous les prototypes et les structures des fonctions pour les clients
+*/
 
 
 #ifndef CLIENT_H_INCLUDED
@@ -45,57 +46,68 @@ typedef struct {
 //////////////////////////////////////////////////////////////
 // Définition des Fonctions 
 //////////////////////////////////////////////////////////////
+/**
+* Initialisation des connexions TCP/IP 
+*
+* Prend en paramètre :
+*		- Un nom de robot
+*		- L'adresse ip du serveur pour la connexion
+*		- Le port pour la connexion
+*
+* renvoie id du joueur, renvoie -1 si problème de connexion, code d'erreur à préciser par la suite
+*/
 
-// Initialisation des connexions TCP/IP
-// prend en paramètre :
-//	- un nom de robot
-//	- l'adresse ip du serveur pour la connexion
-//	- le port pour la connexion
-// renvoie id du joueur, renvoie -1 si problème de connexion, code d'erreur à préciser par la suite*/
 int init_connexion(char *nom, char *ip,int port);
 
 //A commenter
 void close_connexion();
 
-// Fonction permet de récupérer la position d'un robot:
-// pas de parametre
-// renvoie une structure s_robot*/
+/** Fonction permet de récupérer la position d'un robot:
+* 		- Pas de parametre
+*		- Renvoie une structure s_robot
+*/
 s_robot get_position();
 
-// Fonction permet de demander de déplacer un robot
-// prend en parametre :
-//	- la vitesse du robot (speed) en m/s
-//	- la direction du robot en radian
-// ne renvoie rien*/
+/** Fonction permet de demander de déplacer un robot
+* 		Prend en parametre :
+*			- La vitesse du robot (speed) en m/s
+*			- La direction du robot en radian
+*			- Ne renvoie rien
+*/
 void move(float speed, float teta);
 
-// Fonction permet de connaitre l'etat du robot, pour savoir si il touche un objet (mur, autre robot)
-// Ne consomme pas de parametre
-// renvoie 1 char (8bits) pour connaitre quelle zone est en contact (bit0 pour zone 1 ... bit7 pour zone 8*/) bit X = 1 si ça touche et =0 si pas touche
-// La définition des zones est définie dans simu.c fct scan_allaround_result
-// 2 possibilités cf. SCAN_WITH_TETA_ROBOT: 
-		//Si = 0 => Zone 0 est fonction de l'orientation du déplacement du robot (Teta_robot)
-		//Si = 1 => Zone 0 est fixe, à partir de l'angle entre 0 et 2Pi/8 radians (soit Est / Nord-Est)
-
-// NB: Get_status n'apporte pas grand chose, scan_allaround est plus complet
+/** Fonction permet de connaitre l'etat du robot, pour savoir si il touche un objet (mur, autre robot)
+*		- Ne consomme pas de parametre
+* 		- Renvoie 1 char (8bits) pour connaitre quelle zone est en contact (bit0 pour zone 1 ... bit7 pour zone 8) bit X = 1 si ça touche et =0 si pas touche
+* 
+*	La définition des zones est définie dans simu.c fct scan_allaround_result
+*		2 possibilités cf. SCAN_WITH_TETA_ROBOT: 
+*			- Si = 0 => Zone 0 est fonction de l'orientation du déplacement du robot (Teta_robot)
+*			- Si = 1 => Zone 0 est fixe, à partir de l'angle entre 0 et 2Pi/8 radians (soit Est / Nord-Est)
+*
+*	NB: Get_status n'apporte pas grand chose, scan_allaround est plus complet
+*/
 char get_status();
 
-// Fonction permet de connaitre le niveau de vie d'un robot
-// pas de parametre
-// renvoie un entier qui représente le % de vie du robot (0-100)*/
+/**  Fonction permet de connaitre le niveau de vie d'un robot
+*		- Pas de parametre
+* 		- Renvoie un entier qui représente le % de vie du robot (0-100)
+*/
 int get_life();
 
 
-// fonction qui permet au robot de scanner grossierement à 360° les obstacles sur 8 zones et renvoie la distance la plus courte pour chaque zone
-// - pas de parametre
-// - renvoie un pointeur vers tableau de 8 floats (1 par zone) correspondant à la distance la plus courte de chaque zone
-// La définition des zones est définie dans simu.c fct scan_allaround_result
-// 2 possibilités cf. SCAN_WITH_TETA_ROBOT: 
-		//Si = 0 => Zone 0 est fonction de l'orientation du déplacement du robot (Teta_robot)
-		//Si = 1 => Zone 0 est fixe, à partir de l'angle entre 0 et 2Pi/8 radians (soit Est / Nord-Est)
-
-//TODO: Rajouter un lien doxygene vers un schéma avec les distances de chaques zones scannées 
-
+/** Fonction qui permet au robot de scanner grossierement à 360° les obstacles sur 8 zones et renvoie la distance la plus courte pour chaque zone
+*		- Pas de parametre
+*		- Renvoie un pointeur vers tableau de 8 floats (1 par zone) correspondant à la distance la plus courte de chaque zone
+*
+*	La définition des zones est définie dans simu.c fct scan_allaround_result
+*		- 2 possibilités cf. SCAN_WITH_TETA_ROBOT: 
+*		- Si = 0 => Zone 0 est fonction de l'orientation du déplacement du robot (Teta_robot)
+*		- Si = 1 => Zone 0 est fixe, à partir de l'angle entre 0 et 2Pi/8 radians (soit Est / Nord-Est)
+*
+* \image html schema_scan_all_around.png
+*
+*/
 scan_allaround_result scan_allaround();
 
 
