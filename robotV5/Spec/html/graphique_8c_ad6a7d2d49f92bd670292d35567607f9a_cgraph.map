@@ -1,0 +1,5 @@
+<map id="draw_missile" name="draw_missile">
+<area shape="rect" id="node2" href="$_s_d_l__render_8h.html#aade777757bfc3b98bf3ef742b1d8a052" title="Query the attributes of a texture. " alt="" coords="157,5,291,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__render_8h.html#ac2c665c1ce910413272a004cdb52e28e" title="Copy a portion of the source texture to the current rendering target, rotating it by angle around the..." alt="" coords="152,56,296,83"/>
+<area shape="rect" id="node4" href="$_s_d_l__render_8h.html#a4b6c2353384c7b7128fd5960b24f2ae6" title="Copy a portion of the texture to the current rendering target. " alt="" coords="160,107,288,133"/>
+</map>

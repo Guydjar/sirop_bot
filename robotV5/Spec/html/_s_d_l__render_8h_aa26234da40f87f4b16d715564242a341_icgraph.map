@@ -1,0 +1,9 @@
+<map id="SDL_SetRenderDrawColor" name="SDL_SetRenderDrawColor">
+<area shape="rect" id="node2" href="$graphique_8h.html#a6573b18e4842541e558422e887521da7" title="draw_score_update" alt="" coords="233,82,367,108"/>
+<area shape="rect" id="node3" href="$graphique_8h.html#a70f7a148bafa0c1e59c1e805f4c82c51" title="refresh_screen" alt="" coords="429,82,537,108"/>
+<area shape="rect" id="node5" href="$graphique_8h.html#a4bb14833580ea32c1b0e4d03e2212733" title="refresh_screen_init" alt="" coords="417,132,549,159"/>
+<area shape="rect" id="node6" href="$graphique_8h.html#a0f805c9b60b1a55d80a359322183db01" title="draw_log_update" alt="" coords="240,132,360,159"/>
+<area shape="rect" id="node7" href="$graphique_8h.html#a12850e360f0f553596787d8d8166388f" title="draw_button" alt="" coords="253,183,347,210"/>
+<area shape="rect" id="node8" href="$graphique_8h.html#a0688773cd82ccae2a4bf1e3c7feacbbf" title="draw_wall" alt="" coords="260,31,340,58"/>
+<area shape="rect" id="node4" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="597,107,648,134"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="simu_scan_zone" name="simu_scan_zone">
+<area shape="rect" id="node2" href="$wall_8c.html#a238685a586f5f3de1fec9af224817755" title="modulo_teta" alt="" coords="192,5,285,32"/>
+<area shape="rect" id="node3" href="$wall_8c.html#a2d69ac777156ffa3d226f8fac5374e00" title="comprisentre" alt="" coords="353,56,450,83"/>
+<area shape="rect" id="node4" href="$wall_8c.html#aa0f8236005b1f3d006865bf31c9d5b58" title="wall_nearest_point" alt="" coords="173,107,304,133"/>
+<area shape="rect" id="node5" href="$wall_8c.html#a27778718ad0724ac45bf602acb9abf06" title="wall_data" alt="" coords="363,107,440,133"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="draw_wall" name="draw_wall">
+<area shape="rect" id="node2" href="$_s_d_l__render_8h.html#aa26234da40f87f4b16d715564242a341" title="Set the color used for drawing operations (Rect, Line and Clear). " alt="" coords="133,5,312,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__render_8h.html#a6d50e252f15e0c6c14639bdd343285fd" title="Draw a line on the current rendering target. " alt="" coords="147,56,299,83"/>
+</map>

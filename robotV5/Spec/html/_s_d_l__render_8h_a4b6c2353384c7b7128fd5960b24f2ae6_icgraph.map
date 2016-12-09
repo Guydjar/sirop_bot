@@ -1,0 +1,13 @@
+<map id="SDL_RenderCopy" name="SDL_RenderCopy">
+<area shape="rect" id="node2" href="$graphique_8h.html#adc41f295a1a755a3378521126870c877" title="init_graphique" alt="" coords="407,61,510,88"/>
+<area shape="rect" id="node4" href="$graphique_8h.html#a6573b18e4842541e558422e887521da7" title="draw_score_update" alt="" coords="195,188,330,214"/>
+<area shape="rect" id="node6" href="$graphique_8h.html#a4bb14833580ea32c1b0e4d03e2212733" title="refresh_screen_init" alt="" coords="393,238,525,265"/>
+<area shape="rect" id="node7" href="$graphique_8h.html#a0f805c9b60b1a55d80a359322183db01" title="draw_log_update" alt="" coords="203,238,323,265"/>
+<area shape="rect" id="node8" href="$graphique_8h.html#a12850e360f0f553596787d8d8166388f" title="draw_button" alt="" coords="216,289,309,316"/>
+<area shape="rect" id="node9" href="$graphique_8h.html#a570f4a6a1caec8f505652d3b5f4bab56" title="draw_war_zone" alt="" coords="206,137,319,164"/>
+<area shape="rect" id="node10" href="$graphique_8h.html#a2b0b3f77d16d1edbebbc788a52f96a92" title="draw_robot_and_tourelle" alt="" coords="181,86,344,113"/>
+<area shape="rect" id="node11" href="$graphique_8h.html#ad6a7d2d49f92bd670292d35567607f9a" title="draw_missile" alt="" coords="213,36,312,62"/>
+<area shape="rect" id="node12" href="$graphique_8h.html#a590c83f35b118907e6b40b472d14f5e0" title="start_screen" alt="" coords="411,340,506,366"/>
+<area shape="rect" id="node3" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="573,213,624,240"/>
+<area shape="rect" id="node5" href="$graphique_8h.html#a70f7a148bafa0c1e59c1e805f4c82c51" title="refresh_screen" alt="" coords="405,188,513,214"/>
+</map>

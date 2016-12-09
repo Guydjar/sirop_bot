@@ -1,0 +1,9 @@
+<map id="SDL_DestroyTexture" name="SDL_DestroyTexture">
+<area shape="rect" id="node2" href="$graphique_8h.html#a6573b18e4842541e558422e887521da7" title="draw_score_update" alt="" coords="201,56,335,83"/>
+<area shape="rect" id="node5" href="$graphique_8h.html#a4bb14833580ea32c1b0e4d03e2212733" title="refresh_screen_init" alt="" coords="385,107,517,133"/>
+<area shape="rect" id="node6" href="$graphique_8h.html#a0f805c9b60b1a55d80a359322183db01" title="draw_log_update" alt="" coords="208,5,328,32"/>
+<area shape="rect" id="node7" href="$graphique_8h.html#a590c83f35b118907e6b40b472d14f5e0" title="start_screen" alt="" coords="403,157,498,184"/>
+<area shape="rect" id="node8" href="$graphique_8h.html#ac28b4cbc4aa7bbfe989097b1eee235f9" title="close_graphique" alt="" coords="210,208,326,235"/>
+<area shape="rect" id="node3" href="$graphique_8h.html#a70f7a148bafa0c1e59c1e805f4c82c51" title="refresh_screen" alt="" coords="397,56,505,83"/>
+<area shape="rect" id="node4" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="565,132,616,159"/>
+</map>

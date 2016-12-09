@@ -1,0 +1,9 @@
+<map id="SDL_CreateTextureFromSurface" name="SDL_CreateTextureFromSurface">
+<area shape="rect" id="node2" href="$graphique_8h.html#adc41f295a1a755a3378521126870c877" title="init_graphique" alt="" coords="466,5,569,32"/>
+<area shape="rect" id="node4" href="$graphique_8h.html#a6573b18e4842541e558422e887521da7" title="draw_score_update" alt="" coords="267,107,402,133"/>
+<area shape="rect" id="node6" href="$graphique_8h.html#a4bb14833580ea32c1b0e4d03e2212733" title="refresh_screen_init" alt="" coords="451,107,583,133"/>
+<area shape="rect" id="node7" href="$graphique_8h.html#a0f805c9b60b1a55d80a359322183db01" title="draw_log_update" alt="" coords="275,56,395,83"/>
+<area shape="rect" id="node8" href="$graphique_8h.html#a590c83f35b118907e6b40b472d14f5e0" title="start_screen" alt="" coords="287,208,382,235"/>
+<area shape="rect" id="node3" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="632,81,683,108"/>
+<area shape="rect" id="node5" href="$graphique_8h.html#a70f7a148bafa0c1e59c1e805f4c82c51" title="refresh_screen" alt="" coords="463,56,571,83"/>
+</map>

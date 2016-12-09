@@ -1,0 +1,6 @@
+<map id="SDL_RenderCopyEx" name="SDL_RenderCopyEx">
+<area shape="rect" id="node2" href="$graphique_8h.html#a2b0b3f77d16d1edbebbc788a52f96a92" title="draw_robot_and_tourelle" alt="" coords="197,5,360,32"/>
+<area shape="rect" id="node5" href="$graphique_8h.html#ad6a7d2d49f92bd670292d35567607f9a" title="draw_missile" alt="" coords="229,56,328,83"/>
+<area shape="rect" id="node3" href="$graphique_8h.html#a70f7a148bafa0c1e59c1e805f4c82c51" title="refresh_screen" alt="" coords="409,31,517,57"/>
+<area shape="rect" id="node4" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="565,31,616,57"/>
+</map>

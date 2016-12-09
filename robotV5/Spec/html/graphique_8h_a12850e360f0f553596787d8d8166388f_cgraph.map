@@ -1,0 +1,5 @@
+<map id="draw_button" name="draw_button">
+<area shape="rect" id="node2" href="$_s_d_l__render_8h.html#aa26234da40f87f4b16d715564242a341" title="Set the color used for drawing operations (Rect, Line and Clear). " alt="" coords="147,5,325,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__render_8h.html#a3b5098c1944441034d2c5cff419f93cc" title="Fill a rectangle on the current rendering target with the drawing color. " alt="" coords="165,56,307,83"/>
+<area shape="rect" id="node4" href="$_s_d_l__render_8h.html#a4b6c2353384c7b7128fd5960b24f2ae6" title="Copy a portion of the texture to the current rendering target. " alt="" coords="172,107,300,133"/>
+</map>

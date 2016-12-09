@@ -1,0 +1,6 @@
+<map id="SDL_QueryTexture" name="SDL_QueryTexture">
+<area shape="rect" id="node2" href="$graphique_8h.html#a2b0b3f77d16d1edbebbc788a52f96a92" title="draw_robot_and_tourelle" alt="" coords="189,5,352,32"/>
+<area shape="rect" id="node5" href="$graphique_8h.html#ad6a7d2d49f92bd670292d35567607f9a" title="draw_missile" alt="" coords="221,56,320,83"/>
+<area shape="rect" id="node3" href="$graphique_8h.html#a70f7a148bafa0c1e59c1e805f4c82c51" title="refresh_screen" alt="" coords="401,31,509,57"/>
+<area shape="rect" id="node4" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="557,31,608,57"/>
+</map>

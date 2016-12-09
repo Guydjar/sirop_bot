@@ -1,0 +1,7 @@
+<map id="TTF_RenderText_Blended_Wrapped" name="TTF_RenderText_Blended_Wrapped">
+<area shape="rect" id="node2" href="$graphique_8h.html#a6573b18e4842541e558422e887521da7" title="draw_score_update" alt="" coords="230,5,365,32"/>
+<area shape="rect" id="node6" href="$graphique_8h.html#a0f805c9b60b1a55d80a359322183db01" title="draw_log_update" alt="" coords="237,56,357,83"/>
+<area shape="rect" id="node3" href="$graphique_8h.html#a70f7a148bafa0c1e59c1e805f4c82c51" title="refresh_screen" alt="" coords="426,5,534,32"/>
+<area shape="rect" id="node5" href="$graphique_8h.html#a4bb14833580ea32c1b0e4d03e2212733" title="refresh_screen_init" alt="" coords="414,56,546,83"/>
+<area shape="rect" id="node4" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="595,31,645,57"/>
+</map>

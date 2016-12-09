@@ -1,0 +1,10 @@
+<map id="start_screen" name="start_screen">
+<area shape="rect" id="node2" href="$_s_d_l__image_8h.html#a419dd098737fcf5ec4d73f4d69b33ce4" title="IMG_LoadTexture" alt="" coords="193,5,319,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__render_8h.html#a4b6c2353384c7b7128fd5960b24f2ae6" title="Copy a portion of the texture to the current rendering target. " alt="" coords="192,56,320,83"/>
+<area shape="rect" id="node4" href="$_s_d_l__error_8h.html#ac88e1aa404a8f94aaee4ad6b94547647" title="SDL_GetError" alt="" coords="204,107,308,133"/>
+<area shape="rect" id="node5" href="$_s_d_l__ttf_8h.html#a33855e6f20e52c24f62df7f730c25fca" title="TTF_RenderText_Solid" alt="" coords="177,157,335,184"/>
+<area shape="rect" id="node6" href="$_s_d_l__render_8h.html#a0c75234b90965e9db70947fbe91a5840" title="Create a texture from an existing surface. " alt="" coords="149,208,363,235"/>
+<area shape="rect" id="node7" href="$_s_d_l__render_8h.html#a078c0a925e24542d356a02183a306be6" title="Destroy the specified texture. " alt="" coords="183,259,329,285"/>
+<area shape="rect" id="node8" href="$_s_d_l__surface_8h.html#a7b8d4f9cc058822501896a2eed81220e" title="SDL_FreeSurface" alt="" coords="193,309,319,336"/>
+<area shape="rect" id="node9" href="$_s_d_l__render_8h.html#a48fa9d24395f3610746988ecca2aae86" title="Update the screen with rendering performed. " alt="" coords="185,360,327,387"/>
+</map>

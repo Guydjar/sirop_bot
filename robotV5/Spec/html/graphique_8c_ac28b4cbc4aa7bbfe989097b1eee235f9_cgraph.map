@@ -1,0 +1,8 @@
+<map id="close_graphique" name="close_graphique">
+<area shape="rect" id="node2" href="$_s_d_l__render_8h.html#a078c0a925e24542d356a02183a306be6" title="Destroy the specified texture. " alt="" coords="175,5,321,32"/>
+<area shape="rect" id="node3" href="$_s_d_l__render_8h.html#ab1f096742fa9c882c3f1555ee62c4ac2" title="Destroy the rendering context for a window and free associated textures. " alt="" coords="171,56,325,83"/>
+<area shape="rect" id="node4" href="$_s_d_l__video_8h.html#a72609295a4faee0587268339ccff80c2" title="Destroy a window. " alt="" coords="174,107,322,133"/>
+<area shape="rect" id="node5" href="$_s_d_l__ttf_8h.html#a006b7c83a8ff15bb9f9d453d48ba3e51" title="TTF_CloseFont" alt="" coords="191,157,305,184"/>
+<area shape="rect" id="node6" href="$_s_d_l__ttf_8h.html#aa215d7d4fe202960904507a6ad4e6097" title="TTF_Quit" alt="" coords="209,208,287,235"/>
+<area shape="rect" id="node7" href="$_s_d_l_8h.html#afdabaf714781099083592051f2d9ac11" title="SDL_Quit" alt="" coords="209,259,287,285"/>
+</map>

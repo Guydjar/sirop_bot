@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['samples',['samples',['../struct_s_d_l___audio_spec.html#a2cdf5e885808c10bfa2810b706e69f95',1,'SDL_AudioSpec::samples()'],['../struct_s_d_l___haptic_custom.html#a5905ea1b6182da846535ca8c80b4fa33',1,'SDL_HapticCustom::samples()']]],
+  ['scale',['scale',['../struct_s_d_l_test___common_state.html#ad2d2821689008f2fd65034eb8040fb3c',1,'SDLTest_CommonState']]],
+  ['scan_5fall',['scan_all',['../structs__robot.html#a7dd55c39770c0f8bcc6e514df5836b95',1,'s_robot']]],
+  ['scan_5fzone',['scan_zone',['../structs__robot.html#a85759202cd53e0e1a9e599920e0d1653',1,'s_robot']]],
+  ['scancode',['scancode',['../struct_s_d_l___keysym.html#ad47e9120a511e2efc7ec0c6d8a5ec51e',1,'SDL_Keysym']]],
+  ['silence',['silence',['../struct_s_d_l___audio_spec.html#addc462c8a806e6c122eccf63482048f6',1,'SDL_AudioSpec']]],
+  ['size',['size',['../struct_s_d_l___audio_spec.html#a154cf44743ecec78c36dc6c827dd2fdb',1,'SDL_AudioSpec::size()'],['../struct_s_d_l___r_wops.html#ab078bcf43a916d469ff550c60ab4b3f2',1,'SDL_RWops::size()'],['../struct_s_d_l___r_wops.html#a74d37eb068407bd5cdbdb845e4c4663a',1,'SDL_RWops::size()']]],
+  ['skip_5frenderer',['skip_renderer',['../struct_s_d_l_test___common_state.html#a41527c9f496fb3326802de595aa0f306',1,'SDLTest_CommonState']]],
+  ['small_5fmagnitude',['small_magnitude',['../struct_s_d_l___haptic_left_right.html#aaa1f2c1e767a780e447d82efce6cd1cf',1,'SDL_HapticLeftRight']]],
+  ['speed',['speed',['../structs__robot.html#a3a69b882b261de23f1a29dcc224e1ac6',1,'s_robot']]],
+  ['src_5fformat',['src_format',['../struct_s_d_l___audio_c_v_t.html#a6ae81231e017105e6d5e745a51732e16',1,'SDL_AudioCVT']]],
+  ['start',['start',['../struct_s_d_l___text_editing_event.html#ac6c6a00835d92b12c0ba5b78b5ad676d',1,'SDL_TextEditingEvent::start()'],['../struct_s_d_l___haptic_ramp.html#acc0e813ac6399290fd4a788d2471e8d4',1,'SDL_HapticRamp::start()']]],
+  ['state',['state',['../struct_s_d_l___keyboard_event.html#a110558eb96c113c86cfa31a7018c2346',1,'SDL_KeyboardEvent::state()'],['../struct_s_d_l___mouse_motion_event.html#a3f6e9bad9d959b824881ba09e05b7024',1,'SDL_MouseMotionEvent::state()'],['../struct_s_d_l___mouse_button_event.html#a8809cef85cfffad4f2059f2ba4fc6a3d',1,'SDL_MouseButtonEvent::state()'],['../struct_s_d_l___joy_button_event.html#ad3b6f8d9aa2c5e694f664b97d12bcd2b',1,'SDL_JoyButtonEvent::state()'],['../struct_s_d_l___controller_button_event.html#a00c46683f86674c2a4f74404ee3e857c',1,'SDL_ControllerButtonEvent::state()']]],
+  ['stop',['stop',['../struct_s_d_l___r_wops.html#a4108a41afa8b62e75b0f160de4b56103',1,'SDL_RWops']]],
+  ['subsystem',['subsystem',['../struct_s_d_l___sys_w_mmsg.html#a7c3900af5ea797f1318fc77ee0ecd11b',1,'SDL_SysWMmsg::subsystem()'],['../struct_s_d_l___sys_w_minfo.html#a438b6a06ab3ee417293c7b7fc5a23855',1,'SDL_SysWMinfo::subsystem()']]],
+  ['sym',['sym',['../struct_s_d_l___keysym.html#a082ff1fd787b79fa6c3a445deb225f08',1,'SDL_Keysym']]],
+  ['syswm',['syswm',['../union_s_d_l___event.html#ab3b2eaf5348d4c50a51b1f297fdef537',1,'SDL_Event']]]
+];

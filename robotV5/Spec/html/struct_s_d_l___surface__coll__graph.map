@@ -1,0 +1,6 @@
+<map id="SDL_Surface" name="SDL_Surface">
+<area shape="rect" id="node2" href="$struct_s_d_l___pixel_format.html" title="SDL_PixelFormat" alt="" coords="5,187,131,213"/>
+<area shape="rect" id="node3" href="$struct_s_d_l___palette.html" title="SDL_Palette" alt="" coords="20,96,116,123"/>
+<area shape="rect" id="node4" href="$struct_s_d_l___color.html" title="SDL_Color" alt="" coords="25,5,111,32"/>
+<area shape="rect" id="node5" href="$struct_s_d_l___rect.html" title="A rectangle, with the origin at the upper left. " alt="" coords="208,187,289,213"/>
+</map>

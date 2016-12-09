@@ -1,0 +1,9 @@
+<map id="robotV5/Robots" name="robotV5/Robots">
+<area shape="rect" id="node1" href="dir_d47398d5d3c37ce20bb05e1cce5fb25e.html" title="Robots" alt="" coords="52,52,124,100"/>
+<area shape="rect" id="node2" href="dir_028a9b8ddc91d86ad9b321f35fc0413e.html" title="API_Client" alt="" coords="5,148,91,196"/>
+<area shape="rect" id="edge1-headlabel" href="dir_000004_000001.html" title="1" alt="" coords="69,127,77,142"/>
+<area shape="rect" id="node3" href="dir_9ee768f619b6d896deb2811f20994495.html" title="Serveur" alt="" coords="52,244,124,292"/>
+<area shape="rect" id="edge2-headlabel" href="dir_000004_000005.html" title="1" alt="" coords="102,221,110,235"/>
+<area shape="rect" id="edge3-headlabel" href="dir_000001_000005.html" title="2" alt="" coords="75,217,83,231"/>
+<area shape="rect" id="clust1" href="dir_c9b4c0da9ce8210514daddd935acb8a2.html" title="robotV5" alt="" coords="41,16,135,111"/>
+</map>

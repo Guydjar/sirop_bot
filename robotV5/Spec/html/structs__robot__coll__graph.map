@@ -1,0 +1,4 @@
+<map id="s_robot" name="s_robot">
+<area shape="rect" id="node2" href="$structscan__allaround__result.html" title="scan_allaround_result" alt="" coords="5,5,152,32"/>
+<area shape="rect" id="node3" href="$structscan__zone__result.html" title="scan_zone_result" alt="" coords="177,5,300,32"/>
+</map>

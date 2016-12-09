@@ -1,0 +1,10 @@
+<map id="main" name="main">
+<area shape="rect" id="node2" href="$client_8c.html#ac885a6360f5945a1a331deedaa767f5e" title="init_connexion" alt="" coords="111,5,217,32"/>
+<area shape="rect" id="node3" href="$client_8c.html#a32d443823aa74d4cfdc21a2ef6441473" title="get_position" alt="" coords="118,56,210,83"/>
+<area shape="rect" id="node4" href="$client_8c.html#a1dfcd29d83ff7513a4043573aba174ea" title="move" alt="" coords="137,107,191,133"/>
+<area shape="rect" id="node5" href="$client_8c.html#a6da6609e2e05d833e70d6ef2a601bfa7" title="scan_zone" alt="" coords="121,181,207,208"/>
+<area shape="rect" id="node6" href="$client_8c.html#a5f2dcefb07302feaa0e211dab46cee8e" title="missile_status" alt="" coords="111,232,217,259"/>
+<area shape="rect" id="node7" href="$client_8c.html#a15f8bd011295850b507942bf4997f650" title="missile_shoot" alt="" coords="113,283,215,309"/>
+<area shape="rect" id="node8" href="$client_8c.html#ab2185125c64a33267bf4219766f4782f" title="getlife" alt="" coords="135,333,193,360"/>
+<area shape="rect" id="node9" href="$client_8c.html#a79aa0a509d8c2edef1a82764a23403a2" title="close_connexion" alt="" coords="105,384,223,411"/>
+</map>

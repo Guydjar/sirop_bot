@@ -1,0 +1,8 @@
+<map id="SDL_RenderFillRect" name="SDL_RenderFillRect">
+<area shape="rect" id="node2" href="$graphique_8h.html#a6573b18e4842541e558422e887521da7" title="draw_score_update" alt="" coords="198,5,333,32"/>
+<area shape="rect" id="node6" href="$graphique_8h.html#a0f805c9b60b1a55d80a359322183db01" title="draw_log_update" alt="" coords="205,56,325,83"/>
+<area shape="rect" id="node7" href="$graphique_8h.html#a12850e360f0f553596787d8d8166388f" title="draw_button" alt="" coords="219,107,312,133"/>
+<area shape="rect" id="node3" href="$graphique_8h.html#a70f7a148bafa0c1e59c1e805f4c82c51" title="refresh_screen" alt="" coords="394,31,502,57"/>
+<area shape="rect" id="node5" href="$graphique_8h.html#a4bb14833580ea32c1b0e4d03e2212733" title="refresh_screen_init" alt="" coords="382,81,514,108"/>
+<area shape="rect" id="node4" href="$main_8c.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="563,56,613,83"/>
+</map>
