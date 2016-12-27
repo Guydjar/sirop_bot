@@ -70,7 +70,6 @@ int main(int argc, char **argv)
 
 	/***************************************	INIT Yoann	****************************************/
 	int i=0; // counter
-
 	int tempsPrecedent = 0, tempsActuel = 0;
 	int continuer = 1;
 	int wait = 1;
@@ -160,7 +159,7 @@ int main(int argc, char **argv)
         {
             case SDL_QUIT:
                 wait = 0;
-                continuer = 0;
+              	continuer = 0;
                 break;
 
 			case SDL_MOUSEBUTTONUP: /* Clic de la souris */
@@ -238,19 +237,22 @@ int main(int argc, char **argv)
 					{
 						if(event.button.y>((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)) && event.button.y<(((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)+(HAUTEUR_LOG/2)-(MARGE_ECRAN/2))))
 						{
-							wait = 0;
+							system("firefox graphique/images/HELP.bmp");	
+							//system("gedit HELP");
+
 						}
 					}
-
 				}
 				break;
-			default:
-                    break;
-
+				default:
+        break;
         }
-        nb_player = 0;
-        down(sem_ID, 0);// on bloque l'acces a la memoire partagee avec le semaphore
-		for(i=0;i<NB_ROBOT_MAX;i++){
+        
+      
+		nb_player = 0;
+		down(sem_ID, 0);// on bloque l'acces a la memoire partagee avec le semaphore
+		for(i=0;i<NB_ROBOT_MAX;i++)
+		{
 			if(((structure_partagee*)ptr_mem_partagee)->connected[i] == 1)
 			{
 				nb_player++;
@@ -259,14 +261,9 @@ int main(int argc, char **argv)
 				tab_robot[i].exist = 0;
 		}
 		up(sem_ID, 0);// On libere le semaphore
-
-
-
-        SDL_Delay(5);
-        refresh_screen_init(&Context,tab_robot,nb_player);
+    		SDL_Delay(5);
+    		refresh_screen_init(&Context,tab_robot,nb_player);
 	}
-
-
 
 	// Init robot connected
 	init_robot(tab_robot); // initialisation position robot
@@ -281,13 +278,12 @@ int main(int argc, char **argv)
 		else
 			tab_robot[i].exist = 0;
 	}
-	up(sem_ID, 0);// On libere le semaphore
+	up(sem_ID, 0);      
+  
 
 
-/***************************************	Start global	****************************************/
+/***************************************  Start global	****************************************/
 
-
-	//////////////////////////////////////////////////// Variable et commande pour flo ////////////////////////////////////////////////////////
 	//initialisation des robots
 	switch(debugmode)
   	{
@@ -300,6 +296,7 @@ int main(int argc, char **argv)
 			tab_robot[9].exist = 1;
 			sprintf(tab_robot[9].name,"The beast");
 		break;
+		
 	}
 
 
@@ -317,10 +314,11 @@ int main(int argc, char **argv)
 	creer_mur(tab_mur,LARGEUR_TERRAIN,HAUTEUR_TERRAIN,LARGEUR_TERRAIN,0);
 	creer_mur(tab_mur,LARGEUR_TERRAIN,0,0,0);
 
-	//initialisation des murs
+	//initialisation des murs pour chaque niveau
 	srand(time(NULL));
 	switch(level)
   	{
+
 	 	case 1:
 		//mur level 1
 			creer_mur(tab_mur,0,HAUTEUR_TERRAIN/2,LARGEUR_TERRAIN/2,HAUTEUR_TERRAIN/2);
@@ -367,6 +365,8 @@ int main(int argc, char **argv)
 		default:
     	break;
   	}
+  	
+  	// On libere le semaphore
 
 /*    int x_all,y_all,x_fin_all,y_fin_all;
     //Murs aléatoires distance et pente 100% aléatoire
@@ -402,18 +402,44 @@ int main(int argc, char **argv)
 	// Robot manuel
 	float vitesse_man = 0;
 
-////////////////////////////////////////////////////// Fin commande flo /////////////////////////////////////////////////////////////////////
-
-/***************************************	Test	****************************************/
 
 
+/*******************Gestion bouton HELP: solution alternative*************************/
+// HELP button
+/*while(help)
+{
+ 	SDL_PollEvent(&event); // On utilise PollEvent et non WaitEvent pour ne pas bloquer le programme 
+	switch(event.type)
+	{
+		case SDL_QUIT:
+			help = 0;
+		  	continuer = 0;
+		break;
 
+		case SDL_MOUSEBUTTONUP:  //Clic de la souris 
+			if(event.button.button == SDL_BUTTON_LEFT)
+			{
 
+				if(event.button.x>(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(MARGE_ECRAN/2)+(LARGEUR_SCORE/2)) && event.button.x<(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(LARGEUR_SCORE)))
+				{
+					if(event.button.y>((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)) && event.button.y<(((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)+(HAUTEUR_LOG/2)-(MARGE_ECRAN/2))))
+					{
+						system("firefox graphique/images/HELP.bmp");	
+						//system("gedit HELP");
+					//wait=1;
+					//continuer=1;
+					}
+				}
+			}
+		break;	
+	default:
+	break;
+	//wait=1;
+	//continuer=1;
+	}
 
-
-/***************************************	Fin Test	****************************************/
-
-
+}*/
+	 
 
 while(continuer)
 	{
@@ -424,6 +450,7 @@ while(continuer)
         {
             case SDL_QUIT:
                 continuer = 0;
+
                 break;
 			case SDL_MOUSEBUTTONUP: /* Clic de la souris */
 				if(event.button.button == SDL_BUTTON_LEFT)
@@ -436,7 +463,6 @@ while(continuer)
 						}
 					}
 
-
 					// Quit button
 					if(event.button.x>(LARGEUR_TERRAIN+(2*MARGE_ECRAN)) && event.button.x<(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+LARGEUR_SCORE))
 					{
@@ -446,27 +472,37 @@ while(continuer)
 							continuer = 0;
 						}
 					}
+
+					// HELP button
+					if(event.button.x>(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(MARGE_ECRAN/2)+(LARGEUR_SCORE/2)) && event.button.x<(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(LARGEUR_SCORE)))
+					{
+						if(event.button.y>((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)) && event.button.y<(((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)+(HAUTEUR_LOG/2)-(MARGE_ECRAN/2))))
+						{
+							system("firefox graphique/images/HELP.bmp");	
+							//system("gedit HELP");
+						}
+					}
 				}
 				break;
 			case SDL_KEYDOWN:
 				switch(event.key.keysym.sym)
 				{
 
-					case SDLK_o:
+					case SDLK_b:
 						simu_move_robot(tab_robot,9,vitesse_man,tab_robot[9].teta-0.1);
 					break;
-					case SDLK_p:
+					case SDLK_n:
 						simu_move_robot(tab_robot,9,vitesse_man,tab_robot[9].teta+0.1);
 					break;
-					case SDLK_b:
-						teta_scan = teta_scan + 10.0/180.0*M_PI;
+					case SDLK_i:
+						teta_scan = teta_scan + RANGE_SCAN/180.0*M_PI;
 						printf("teta_scan = %f\n",teta_scan);
 					break;
-					case SDLK_v:
-						teta_scan = teta_scan - 10.0/180.0*M_PI;
+					case SDLK_o:
+						teta_scan = teta_scan - RANGE_SCAN/180.0*M_PI;
 						printf("teta_scan = %f\n",teta_scan);
 					break;
-					case SDLK_r:
+					case SDLK_p:
 						tab_robot[9].scan_zone = simu_scan_zone(tab_robot, tab_mur, tab_missile,9, teta_scan);
 						tab_robot[9].teta_scan = teta_scan;
 						tab_robot[9].count_scan = 10;
@@ -480,7 +516,7 @@ for (i=0; i<8; i++)
 	printf("zone %d = %f\n",i+1,tab_robot[9].scan_all.zone_distance[i]);
 }
 					break;
-                   			case SDLK_n:
+                   			case SDLK_f:
 						stat = simu_get_status(tab_robot,tab_mur,tab_missile,9);
 						printf("status_result=%d\n",stat);
 					break;
@@ -553,16 +589,16 @@ for (i=0; i<8; i++)
 						simu_missile_shoot(tab_robot, 9, tab_missile,-3*M_PI/4);
 					break;
 
-					case SDLK_t:
+					case SDLK_r:
 						vitesse_man = 0;
 					break;
-					case SDLK_y:
+					case SDLK_t:
 						vitesse_man = 1;
 					break;
-					case SDLK_u:
+					case SDLK_y:
 						vitesse_man = 2;
 					break;
-					case SDLK_i:
+					case SDLK_u:
 						vitesse_man = 3;
 					break;
 					default:
