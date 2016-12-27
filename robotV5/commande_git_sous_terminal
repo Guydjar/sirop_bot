@@ -2,7 +2,7 @@ git clone git clone https://github.com/Guydjar/sirop_bot.git
 cloner le projet
 
 git status
-connaitre le statut (ecart des fichiers)
+connaitre le statut (ecart des fichiers) -> si fichier en rouge suivre étapes 3 ou 3bis ci-dessous
 
 git commit -m"test de modif de reseau.txt"
 pour valider un fichier
@@ -27,5 +27,7 @@ export https_proxy = $http_proxy
 Procédure pour ajouter des évolutions :
 1. git pull -> recuperer le projet en local
 2. git commit -m"test de modif de reseau.txt" -> pour valider un fichier et ajouter des commentaires
-3. git add nomdufichierajouter -> SI BESOIN
+3. git add nomdufichieràajouter -> dans le cas de l'ajout d'un nouveau fichier
+3bis. git add puis git add . -> pour indexer les fichiés modifiés ou supprimés avant de "commiter"
 4. git push origin -> l'envoyer sur le serveur github
+
