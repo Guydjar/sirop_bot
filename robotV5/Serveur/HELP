@@ -1,0 +1,39 @@
+/////////////////////// MODE D'EMPLOI ROBOT DEBUG \\\\\\\\\\\\\\\\\\\\
+
+Contrôlez le robot debug afin de tester les réactions de votre propre robot tel qu'en combat réel !
+
+VITESSE DE DEPLACEMENT DU ROBOT:
+	-touche 'r' : arrêt
+	-touche 't' : vitesse 1
+	-touche 'y' : vitesse 2
+	-touche 'u' : vitesse 3
+
+DEPLACEMENT DU ROBOT:
+	-utilisez les touches directionnelles pour déplacer votre robot (haut, bas, gauche, droite)
+	-touche 'b': -0.1*teta à la direction du robot
+	-touche 'n': +0.1*teta à la direction du robot
+
+TIRE DE MISSILES:
+	-touche '1' (pavé num) ou touche 'w' (clavier)
+	-touche '2' (pavé num) ou touche 'x' (clavier)
+	-touche '3' (pavé num) ou touche 'c' (clavier)
+	-touche '4' (pavé num) ou touche 'q' (clavier)
+	-touche '6' (pavé num) ou touche 'd' (clavier)
+	-touche '7' (pavé num) ou touche 'a' (clavier)
+	-touche '8' (pavé num) ou touche 'z' (clavier)
+	-touche '9' (pavé num) ou touche 'e' (clavier)
+
+FONCTIONS SCAN (radar): 
+Le scan fin permet de détecter 3 type d'objets différents:
+	>renvoi  0 = pas d'objet
+	>renvoi  1 = mur
+	>renvoi  2 = robot ennemi
+	>renvoi  3 = missile
+
+Le scan large permet de scanner sur 360° 8 zones de 45°. Renvoi la distance la plus proche pour chacune des zones scannées.
+
+	-touche 'p': scan fin
+	-touche 'i': rotation du scan fin -5°
+	-touche 'o': rotation du scan fin +5°
+	-touche 'm': scan large (360°)
+
