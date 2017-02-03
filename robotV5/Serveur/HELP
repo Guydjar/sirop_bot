@@ -1,3 +1,18 @@
+//////////////////////////// LANCEMENT DU JEU \\\\\\\\\\\\\\\\\\\\\\\
+
+1. 	Lancement de l'interface graphique
+		-lancer un terminal
+		-se placer dans le dossier "Serveur"
+		-compiler le projet avec le MAKEFILE
+		-lancer le jeu avec la commande: ./simu.out <numéro de port> (exemple: ./simu.out 8081 )
+
+2. 	Chargement du robot
+		-placer un fichier "robot.c" (votre code) dans le dossier "Robot"
+		-lancer un autre terminal
+		-se placer dans le dossier "Robot"
+		-compiler le projet avec le MAKEFILE
+		-charger votre robot avec la commande: ./robot.out <adresse ip> <numéro de port> <nom>  (exemple: ./robot.out 127.0.0.1 8081 toto)
+
 /////////////////////// MODE D'EMPLOI ROBOT DEBUG \\\\\\\\\\\\\\\\\\\\
 
 Contrôlez le robot debug afin de tester les réactions de votre propre robot tel qu'en combat réel !
