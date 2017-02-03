@@ -17,6 +17,7 @@ OBJ_ROBOT = $(SRC_ROBOT:.c=.o)
 EXEC =robot.out
 
 
+
 # règle initiale
 all: $(EXEC)
 

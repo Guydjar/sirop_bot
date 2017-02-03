@@ -29,15 +29,15 @@
 //mur
 #define NB_WALL_ALLOWED 1000 //Nombre de murs maximum pouvant etre créés
 #define MUR_DESTRUC_DIST RAYON_ROBOT // distance de destruction du mur
-#define WALL_DESTRUCTION_ALLOWED 0 //autorisation de la detruction des murs
-#define NB_WALL_INIT 9 //NB de mur à l'init (hors murs extérieurs (Terrain)
+#define WALL_DESTRUCTION_ALLOWED 0 //autorisation de la detruction des murs (0 ou 1)
+#define NB_WALL_INIT 10 //NB de mur à l'init (hors murs extérieurs (Terrain)
 #define DIST_WALL_INIT -1 //Distance des murs -1 pour aléatoire
 
 
 //scaner allaround
 #define NB_SCAN_FIN 8 // nombre de scan utilisés pour le scaner du robot, ex 8, pour 8 zones de 45°
 #define SCAN_WITH_TETA_ROBOT 0 //si 1 les zones scannées dépendent de l'angle du robot , si = 0 alors référence fixe zone1 = 0=>45° ....)
-#define SCAN_DIST_MAX 200 //Distance max pour le scan around
+#define SCAN_DIST_MAX 700 //Distance max pour le scan around
 
 //scaner zone
 #define NB_OBJECT_TO_SCAN 1 //nombre d'objets scannés dans le scan_fin

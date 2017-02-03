@@ -1,84 +1,1911 @@
  INFO: Semaphore  ::ok:111
  INFO: shared memory  ::ok:111
+ INFO: CONNEXION ::TEST:0
+ INFO: nouvelle connexion ::127.0.0.1:0
+ INFO: n ::fork ::0
+ INFO: Semaphore  ::ok:1
+ INFO: shared memory  ::ok:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::A;:1
+ INFO: if send ::ok:1
+ INFO: send  ::524.000000;265.000000;0.785398;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;1.000000;0.000000;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::Z;:1
  INFO: quit ::TEST:0
  INFO: Semaphore  ::ok:111
  INFO: shared memory  ::ok:111
  INFO: quit ::TEST:0
  INFO: Semaphore  ::ok:111
  INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
-ERROR: system call:bind Errno=98 exiting pid=3275
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
-ERROR: system call:bind Errno=98 exiting pid=3445
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
- INFO: quit ::TEST:0
- INFO: Semaphore  ::ok:111
- INFO: shared memory  ::ok:111
+ INFO: CONNEXION ::TEST:0
+ INFO: nouvelle connexion ::127.0.0.1:0
+ INFO: n ::fork ::0
+ INFO: Semaphore  ::ok:1
+ INFO: shared memory  ::ok:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::A;:1
+ INFO: if send ::ok:1
+ INFO: send  ::15.000000;85.000000;0.785398;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;0.174533;:1
+ INFO: if send ::ok:1
+ INFO: send  ::114.681503;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;0.383972;:1
+ INFO: if send ::ok:1
+ INFO: send  ::180.201431;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;0.000000;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;0.593412;:1
+ INFO: if send ::ok:1
+ INFO: send  ::409.128143;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::E;:1
+ INFO: if send ::ok:1
+ INFO: send  ::96.646255;99.636276;26.870058;19.000000;19.000000;26.870058;57.237450;57.901245;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;0.000000;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;0.593412;:1
+ INFO: if send ::ok:1
+ INFO: send  ::405.448212;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;0.802851;:1
+ INFO: if send ::ok:1
+ INFO: send  ::270.219604;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::E;:1
+ INFO: if send ::ok:1
+ INFO: send  ::88.646255;97.063934;38.183765;27.000000;27.000000;38.183762;52.499557;53.108402;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;0.000000;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;0.802851;:1
+ INFO: if send ::ok:1
+ INFO: send  ::270.219604;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;1.012291;:1
+ INFO: if send ::ok:1
+ INFO: send  ::235.688507;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::E;:1
+ INFO: if send ::ok:1
+ INFO: send  ::80.646255;95.036720;49.497475;35.000000;35.000000;49.497471;47.761665;48.315567;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;0.000000;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;1.012291;:1
+ INFO: if send ::ok:1
+ INFO: send  ::235.688507;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;1.221730;:1
+ INFO: if send ::ok:1
+ INFO: send  ::217.408035;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::E;:1
+ INFO: if send ::ok:1
+ INFO: send  ::72.646255;93.586502;60.811184;43.000000;43.000000;53.394997;43.023773;43.522728;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;0.000000;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;1.221730;:1
+ INFO: if send ::ok:1
+ INFO: send  ::217.408035;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;1.431170;:1
+ INFO: if send ::ok:1
+ INFO: send  ::92.892456;2;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::E;:1
+ INFO: if send ::ok:1
+ INFO: send  ::64.646255;92.737587;72.124893;51.000000;51.000000;47.514999;38.285881;38.729885;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;0.000000;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;1.431170;:1
+ INFO: if send ::ok:1
+ INFO: send  ::210.288193;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;1.640610;:1
+ INFO: if send ::ok:1
+ INFO: send  ::92.504852;2;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::E;:1
+ INFO: if send ::ok:1
+ INFO: send  ::56.646255;210.000000;83.438599;59.000000;59.000000;41.635002;33.547989;33.937050;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;0.000000;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;1.640610;:1
+ INFO: if send ::ok:1
+ INFO: send  ::92.621284;2;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;1.640610;:1
+ INFO: if send ::ok:1
+ INFO: send  ::92.737587;2;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;1.850049;:1
+ INFO: if send ::ok:1
+ INFO: send  ::192.539551;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;2.059489;:1
+ INFO: if send ::ok:1
+ INFO: send  ::134.033630;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;2.268928;:1
+ INFO: if send ::ok:1
+ INFO: send  ::108.894447;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;2.478368;:1
+ INFO: if send ::ok:1
+ INFO: send  ::96.581398;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;2.687807;:1
+ INFO: if send ::ok:1
+ INFO: send  ::91.047325;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;2.897247;:1
+ INFO: if send ::ok:1
+ INFO: send  ::90.109390;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;3.106686;:1
+ INFO: if send ::ok:1
+ INFO: send  ::93.000000;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;3.316126;:1
+ INFO: if send ::ok:1
+ INFO: send  ::97.370529;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;3.525565;:1
+ INFO: if send ::ok:1
+ INFO: send  ::104.484055;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;3.735005;:1
+ INFO: if send ::ok:1
+ INFO: send  ::117.211678;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;3.944444;:1
+ INFO: if send ::ok:1
+ INFO: send  ::41.421791;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;4.153883;:1
+ INFO: if send ::ok:1
+ INFO: send  ::23.381611;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;4.363323;:1
+ INFO: if send ::ok:1
+ INFO: send  ::16.799288;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;4.572762;:1
+ INFO: if send ::ok:1
+ INFO: send  ::13.571785;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;4.782201;:1
+ INFO: if send ::ok:1
+ INFO: send  ::11.817811;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;4.991641;:1
+ INFO: if send ::ok:1
+ INFO: send  ::10.886643;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;5.201080;:1
+ INFO: if send ::ok:1
+ INFO: send  ::10.517608;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;5.410519;:1
+ INFO: if send ::ok:1
+ INFO: send  ::10.500001;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;5.619958;:1
+ INFO: if send ::ok:1
+ INFO: send  ::10.685227;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;5.829398;:1
+ INFO: if send ::ok:1
+ INFO: send  ::11.380314;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;6.038837;:1
+ INFO: if send ::ok:1
+ INFO: send  ::12.769005;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;6.248276;:1
+ INFO: if send ::ok:1
+ INFO: send  ::15.305649;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;6.457716;:1
+ INFO: if send ::ok:1
+ INFO: send  ::20.201717;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;6.667155;:1
+ INFO: if send ::ok:1
+ INFO: send  ::31.743263;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;6.876594;:1
+ INFO: if send ::ok:1
+ INFO: send  ::306.165283;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;7.086033;:1
+ INFO: if send ::ok:1
+ INFO: send  ::293.513031;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;7.295473;:1
+ INFO: if send ::ok:1
+ INFO: send  ::195.476013;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;7.504912;:1
+ INFO: if send ::ok:1
+ INFO: send  ::178.338211;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;7.714351;:1
+ INFO: if send ::ok:1
+ INFO: send  ::170.586334;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;7.923790;:1
+ INFO: if send ::ok:1
+ INFO: send  ::168.443695;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;8.133230;:1
+ INFO: if send ::ok:1
+ INFO: send  ::169.651749;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;8.342669;:1
+ INFO: if send ::ok:1
+ INFO: send  ::178.842865;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;8.552109;:1
+ INFO: if send ::ok:1
+ INFO: send  ::198.640488;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;8.761548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::196.554688;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;8.970987;:1
+ INFO: if send ::ok:1
+ INFO: send  ::110.623650;2;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;8.761548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::201.199585;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;8.861548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;8.861548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;8.861548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;8.861548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;8.970987;:1
+ INFO: if send ::ok:1
+ INFO: send  ::102.297020;2;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;8.761548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::190.649628;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;8.861548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;8.861548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;8.861548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;8.861548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;8.970987;:1
+ INFO: if send ::ok:1
+ INFO: send  ::88.491486;2;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;8.761548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::176.535004;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;8.861548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;8.861548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;8.861548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;8.861548;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;8.970987;:1
+ INFO: if send ::ok:1
+ INFO: send  ::147.719559;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;9.180427;:1
+ INFO: if send ::ok:1
+ INFO: send  ::136.202667;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;9.389866;:1
+ INFO: if send ::ok:1
+ INFO: send  ::131.143539;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;9.599305;:1
+ INFO: if send ::ok:1
+ INFO: send  ::128.249359;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;9.808744;:1
+ INFO: if send ::ok:1
+ INFO: send  ::130.062134;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;10.018184;:1
+ INFO: if send ::ok:1
+ INFO: send  ::138.342072;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;10.227623;:1
+ INFO: if send ::ok:1
+ INFO: send  ::155.840500;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;10.437062;:1
+ INFO: if send ::ok:1
+ INFO: send  ::160.208527;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;10.646502;:1
+ INFO: if send ::ok:1
+ INFO: send  ::121.064705;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;10.855941;:1
+ INFO: if send ::ok:1
+ INFO: send  ::102.618507;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;11.065380;:1
+ INFO: if send ::ok:1
+ INFO: send  ::93.547523;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;11.274819;:1
+ INFO: if send ::ok:1
+ INFO: send  ::90.037537;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;11.484259;:1
+ INFO: if send ::ok:1
+ INFO: send  ::90.715401;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;11.693698;:1
+ INFO: if send ::ok:1
+ INFO: send  ::94.287361;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;11.903137;:1
+ INFO: if send ::ok:1
+ INFO: send  ::99.740158;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;12.112576;:1
+ INFO: if send ::ok:1
+ INFO: send  ::110.264206;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;12.322016;:1
+ INFO: if send ::ok:1
+ INFO: send  ::320.148438;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;12.531455;:1
+ INFO: if send ::ok:1
+ INFO: send  ::425.437225;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;12.740894;:1
+ INFO: if send ::ok:1
+ INFO: send  ::216.854675;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;12.950334;:1
+ INFO: if send ::ok:1
+ INFO: send  ::301.671295;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;13.159773;:1
+ INFO: if send ::ok:1
+ INFO: send  ::147.884491;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;13.369212;:1
+ INFO: if send ::ok:1
+ INFO: send  ::116.749001;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;13.578651;:1
+ INFO: if send ::ok:1
+ INFO: send  ::99.432564;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;13.788091;:1
+ INFO: if send ::ok:1
+ INFO: send  ::89.509102;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;13.997530;:1
+ INFO: if send ::ok:1
+ INFO: send  ::84.438995;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;14.206969;:1
+ INFO: if send ::ok:1
+ INFO: send  ::82.187546;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;14.416409;:1
+ INFO: if send ::ok:1
+ INFO: send  ::81.549995;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;14.625848;:1
+ INFO: if send ::ok:1
+ INFO: send  ::84.644661;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;14.835287;:1
+ INFO: if send ::ok:1
+ INFO: send  ::63.146915;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;15.044726;:1
+ INFO: if send ::ok:1
+ INFO: send  ::49.207970;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;15.254166;:1
+ INFO: if send ::ok:1
+ INFO: send  ::40.582466;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;15.463605;:1
+ INFO: if send ::ok:1
+ INFO: send  ::34.934856;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;15.673044;:1
+ INFO: if send ::ok:1
+ INFO: send  ::31.122543;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;15.882483;:1
+ INFO: if send ::ok:1
+ INFO: send  ::27.846334;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;16.091923;:1
+ INFO: if send ::ok:1
+ INFO: send  ::25.471134;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;16.301363;:1
+ INFO: if send ::ok:1
+ INFO: send  ::23.982971;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;16.510803;:1
+ INFO: if send ::ok:1
+ INFO: send  ::23.312025;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;16.720243;:1
+ INFO: if send ::ok:1
+ INFO: send  ::23.614628;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;16.929684;:1
+ INFO: if send ::ok:1
+ INFO: send  ::25.624697;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;17.139124;:1
+ INFO: if send ::ok:1
+ INFO: send  ::46.674965;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;17.348564;:1
+ INFO: if send ::ok:1
+ INFO: send  ::215.052307;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;17.558004;:1
+ INFO: if send ::ok:1
+ INFO: send  ::199.891556;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;17.767445;:1
+ INFO: if send ::ok:1
+ INFO: send  ::194.838974;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;17.976885;:1
+ INFO: if send ::ok:1
+ INFO: send  ::68.655693;2;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;17.767445;:1
+ INFO: if send ::ok:1
+ INFO: send  ::197.424591;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;17.867445;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;17.867445;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;17.867445;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;17.867445;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;17.976885;:1
+ INFO: if send ::ok:1
+ INFO: send  ::187.964569;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;18.186325;:1
+ INFO: if send ::ok:1
+ INFO: send  ::187.213943;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;18.395765;:1
+ INFO: if send ::ok:1
+ INFO: send  ::195.061310;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;18.605206;:1
+ INFO: if send ::ok:1
+ INFO: send  ::387.432281;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;18.814646;:1
+ INFO: if send ::ok:1
+ INFO: send  ::256.361237;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;19.024086;:1
+ INFO: if send ::ok:1
+ INFO: send  ::322.622406;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;19.233526;:1
+ INFO: if send ::ok:1
+ INFO: send  ::153.938766;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;19.442966;:1
+ INFO: if send ::ok:1
+ INFO: send  ::116.337051;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;19.652407;:1
+ INFO: if send ::ok:1
+ INFO: send  ::98.488441;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;19.861847;:1
+ INFO: if send ::ok:1
+ INFO: send  ::89.636322;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;20.071287;:1
+ INFO: if send ::ok:1
+ INFO: send  ::86.127960;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;20.280727;:1
+ INFO: if send ::ok:1
+ INFO: send  ::86.638657;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;20.490168;:1
+ INFO: if send ::ok:1
+ INFO: send  ::89.846619;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;20.699608;:1
+ INFO: if send ::ok:1
+ INFO: send  ::94.089035;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;20.909048;:1
+ INFO: if send ::ok:1
+ INFO: send  ::83.124084;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;21.118488;:1
+ INFO: if send ::ok:1
+ INFO: send  ::65.371078;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;21.327929;:1
+ INFO: if send ::ok:1
+ INFO: send  ::56.213478;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;21.537369;:1
+ INFO: if send ::ok:1
+ INFO: send  ::51.445488;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;21.746809;:1
+ INFO: if send ::ok:1
+ INFO: send  ::49.480400;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;21.956249;:1
+ INFO: if send ::ok:1
+ INFO: send  ::49.668640;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;22.165689;:1
+ INFO: if send ::ok:1
+ INFO: send  ::50.611149;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;22.375130;:1
+ INFO: if send ::ok:1
+ INFO: send  ::53.458519;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;22.584570;:1
+ INFO: if send ::ok:1
+ INFO: send  ::59.213318;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;22.794010;:1
+ INFO: if send ::ok:1
+ INFO: send  ::69.479744;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;23.003450;:1
+ INFO: if send ::ok:1
+ INFO: send  ::88.234550;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;23.212891;:1
+ INFO: if send ::ok:1
+ INFO: send  ::127.384964;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;23.422331;:1
+ INFO: if send ::ok:1
+ INFO: send  ::138.891769;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;23.631771;:1
+ INFO: if send ::ok:1
+ INFO: send  ::117.146248;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;23.841211;:1
+ INFO: if send ::ok:1
+ INFO: send  ::104.119904;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;24.050652;:1
+ INFO: if send ::ok:1
+ INFO: send  ::96.701096;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;24.260092;:1
+ INFO: if send ::ok:1
+ INFO: send  ::92.552032;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;24.469532;:1
+ INFO: if send ::ok:1
+ INFO: send  ::90.118637;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;24.678972;:1
+ INFO: if send ::ok:1
+ INFO: send  ::91.650360;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;24.888412;:1
+ INFO: if send ::ok:1
+ INFO: send  ::97.975204;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;25.097853;:1
+ INFO: if send ::ok:1
+ INFO: send  ::111.614441;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;25.307293;:1
+ INFO: if send ::ok:1
+ INFO: send  ::404.646149;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;25.516733;:1
+ INFO: if send ::ok:1
+ INFO: send  ::215.872696;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;25.726173;:1
+ INFO: if send ::ok:1
+ INFO: send  ::329.630280;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;25.935614;:1
+ INFO: if send ::ok:1
+ INFO: send  ::208.173721;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;26.145054;:1
+ INFO: if send ::ok:1
+ INFO: send  ::185.306107;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;26.354494;:1
+ INFO: if send ::ok:1
+ INFO: send  ::174.378235;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;26.563934;:1
+ INFO: if send ::ok:1
+ INFO: send  ::171.999634;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;26.773375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::175.090805;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;26.982815;:1
+ INFO: if send ::ok:1
+ INFO: send  ::46.513981;2;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;26.773375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::180.080841;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;26.873375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;26.873375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;26.873375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;26.873375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;26.982815;:1
+ INFO: if send ::ok:1
+ INFO: send  ::40.277538;2;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;26.773375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::169.916855;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;26.873375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;26.873375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;26.873375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;26.873375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;26.982815;:1
+ INFO: if send ::ok:1
+ INFO: send  ::26.338320;2;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;26.773375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::156.118301;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::B;2.000000;26.873375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::move OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;26.873375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;26.873375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::G;26.873375;:1
+ INFO: if send ::ok:1
+ INFO: send  ::Missile shoot OK;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;26.982815;:1
+ INFO: if send ::ok:1
+ INFO: send  ::146.992325;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;27.192255;:1
+ INFO: if send ::ok:1
+ INFO: send  ::152.470718;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;27.401695;:1
+ INFO: if send ::ok:1
+ INFO: send  ::119.497406;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;27.611135;:1
+ INFO: if send ::ok:1
+ INFO: send  ::99.946373;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;27.820576;:1
+ INFO: if send ::ok:1
+ INFO: send  ::89.062042;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;28.030016;:1
+ INFO: if send ::ok:1
+ INFO: send  ::83.499008;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;28.239456;:1
+ INFO: if send ::ok:1
+ INFO: send  ::81.795280;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;28.448896;:1
+ INFO: if send ::ok:1
+ INFO: send  ::81.429268;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;28.658337;:1
+ INFO: if send ::ok:1
+ INFO: send  ::84.119453;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;28.867777;:1
+ INFO: if send ::ok:1
+ INFO: send  ::91.203468;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;29.077217;:1
+ INFO: if send ::ok:1
+ INFO: send  ::104.799324;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;29.286657;:1
+ INFO: if send ::ok:1
+ INFO: send  ::130.302673;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;29.496098;:1
+ INFO: if send ::ok:1
+ INFO: send  ::181.611252;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;29.705538;:1
+ INFO: if send ::ok:1
+ INFO: send  ::151.345032;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;29.914978;:1
+ INFO: if send ::ok:1
+ INFO: send  ::135.812927;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;30.124418;:1
+ INFO: if send ::ok:1
+ INFO: send  ::128.821625;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;30.333858;:1
+ INFO: if send ::ok:1
+ INFO: send  ::128.038773;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;30.543299;:1
+ INFO: if send ::ok:1
+ INFO: send  ::131.401749;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;30.752739;:1
+ INFO: if send ::ok:1
+ INFO: send  ::137.361023;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;30.962179;:1
+ INFO: if send ::ok:1
+ INFO: send  ::350.252838;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;31.171619;:1
+ INFO: if send ::ok:1
+ INFO: send  ::337.910309;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;31.381060;:1
+ INFO: if send ::ok:1
+ INFO: send  ::212.166306;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;31.590500;:1
+ INFO: if send ::ok:1
+ INFO: send  ::286.637360;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;31.799940;:1
+ INFO: if send ::ok:1
+ INFO: send  ::118.087387;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;32.009380;:1
+ INFO: if send ::ok:1
+ INFO: send  ::78.926117;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;32.218819;:1
+ INFO: if send ::ok:1
+ INFO: send  ::58.841473;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;32.428257;:1
+ INFO: if send ::ok:1
+ INFO: send  ::46.898220;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;32.637695;:1
+ INFO: if send ::ok:1
+ INFO: send  ::39.179607;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;32.847134;:1
+ INFO: if send ::ok:1
+ INFO: send  ::33.948990;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;33.056572;:1
+ INFO: if send ::ok:1
+ INFO: send  ::29.960083;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;33.266010;:1
+ INFO: if send ::ok:1
+ INFO: send  ::26.504778;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;33.475449;:1
+ INFO: if send ::ok:1
+ INFO: send  ::23.981953;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;33.684887;:1
+ INFO: if send ::ok:1
+ INFO: send  ::22.136496;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;33.894325;:1
+ INFO: if send ::ok:1
+ INFO: send  ::20.807629;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;34.103764;:1
+ INFO: if send ::ok:1
+ INFO: send  ::20.387838;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;34.313202;:1
+ INFO: if send ::ok:1
+ INFO: send  ::32.253963;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;34.522640;:1
+ INFO: if send ::ok:1
+ INFO: send  ::61.512688;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;34.732079;:1
+ INFO: if send ::ok:1
+ INFO: send  ::61.069126;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;34.941517;:1
+ INFO: if send ::ok:1
+ INFO: send  ::62.909809;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;35.150955;:1
+ INFO: if send ::ok:1
+ INFO: send  ::68.012611;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;35.360394;:1
+ INFO: if send ::ok:1
+ INFO: send  ::77.923256;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;35.569832;:1
+ INFO: if send ::ok:1
+ INFO: send  ::96.597443;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;35.779270;:1
+ INFO: if send ::ok:1
+ INFO: send  ::135.958328;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;35.988708;:1
+ INFO: if send ::ok:1
+ INFO: send  ::252.429977;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;36.198147;:1
+ INFO: if send ::ok:1
+ INFO: send  ::220.611816;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;36.407585;:1
+ INFO: if send ::ok:1
+ INFO: send  ::203.645264;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;36.617023;:1
+ INFO: if send ::ok:1
+ INFO: send  ::197.143753;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;36.826462;:1
+ INFO: if send ::ok:1
+ INFO: send  ::197.214264;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;37.035900;:1
+ INFO: if send ::ok:1
+ INFO: send  ::413.270447;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;37.245338;:1
+ INFO: if send ::ok:1
+ INFO: send  ::373.506592;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;37.454777;:1
+ INFO: if send ::ok:1
+ INFO: send  ::241.098251;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;37.664215;:1
+ INFO: if send ::ok:1
+ INFO: send  ::289.405945;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;37.873653;:1
+ INFO: if send ::ok:1
+ INFO: send  ::40.567844;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;38.083092;:1
+ INFO: if send ::ok:1
+ INFO: send  ::23.127975;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;38.292530;:1
+ INFO: if send ::ok:1
+ INFO: send  ::16.684530;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;38.501968;:1
+ INFO: if send ::ok:1
+ INFO: send  ::13.510920;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;38.711407;:1
+ INFO: if send ::ok:1
+ INFO: send  ::11.784403;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;38.920845;:1
+ INFO: if send ::ok:1
+ INFO: send  ::10.870393;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;39.130283;:1
+ INFO: if send ::ok:1
+ INFO: send  ::10.514409;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;39.339722;:1
+ INFO: if send ::ok:1
+ INFO: send  ::10.500000;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;39.549160;:1
+ INFO: if send ::ok:1
+ INFO: send  ::10.696525;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;39.758598;:1
+ INFO: if send ::ok:1
+ INFO: send  ::11.406776;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;39.968037;:1
+ INFO: if send ::ok:1
+ INFO: send  ::12.818106;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;40.177475;:1
+ INFO: if send ::ok:1
+ INFO: send  ::15.395871;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;40.386913;:1
+ INFO: if send ::ok:1
+ INFO: send  ::20.386663;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;40.596352;:1
+ INFO: if send ::ok:1
+ INFO: send  ::32.250721;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;40.805790;:1
+ INFO: if send ::ok:1
+ INFO: send  ::41.230095;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;41.015228;:1
+ INFO: if send ::ok:1
+ INFO: send  ::40.708889;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;41.224667;:1
+ INFO: if send ::ok:1
+ INFO: send  ::41.699879;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;41.434105;:1
+ INFO: if send ::ok:1
+ INFO: send  ::44.821289;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;41.643543;:1
+ INFO: if send ::ok:1
+ INFO: send  ::51.046543;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;41.852982;:1
+ INFO: if send ::ok:1
+ INFO: send  ::62.891308;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;42.062420;:1
+ INFO: if send ::ok:1
+ INFO: send  ::87.957214;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;42.271858;:1
+ INFO: if send ::ok:1
+ INFO: send  ::162.234543;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
+ INFO: if send ::ok:1
+ INFO: send  ::100;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::F;42.481297;:1
+ INFO: if send ::ok:1
+ INFO: send  ::234.135529;1;:1
+ INFO: if recv ::ok:1
+ INFO: receive  ::D;:1
  INFO: quit ::TEST:0

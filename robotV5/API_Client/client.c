@@ -6,10 +6,11 @@
 #include <arpa/inet.h>
 #include <string.h>
 #include <math.h>
+//#inclientclude "../Serveur/config.h"
+//#include "../Serveur/robot_simu.h"
 #include "../Serveur/config.h"
-#include "../Serveur/robot_simu.h"
-//#include "config.h"
-//#include "client.h"
+//#include "../API_Client/client.h"
+#include "client.h"
 
 
 int fd; // socket File descriptor
@@ -110,7 +111,7 @@ char get_status(){
 // permet de connaitre le niveau de vie d'un robot
 // - pas de parametre
 // - renvoie un entier qui représente le % de vie du robot (0-100)
-int getlife(){
+int get_life(){
 	int err;
 	int ret;
 	char message[BUFSIZE] , server_reply[BUFSIZE];

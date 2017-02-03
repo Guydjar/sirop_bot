@@ -68,7 +68,7 @@ int main(int argc, char **argv)
 		exit(0);
 	}
 
-	/***************************************	INIT Yoann	****************************************/
+	/***************************************	INITIALISATION	****************************************/
 	int i=0; // counter
 	int tempsPrecedent = 0, tempsActuel = 0;
 	int continuer = 1;
@@ -153,7 +153,7 @@ int main(int argc, char **argv)
 
 	while(wait)
 	{
-		// Gestion evenement
+		// Gestion des evenements de l'interface graphique
 		SDL_PollEvent(&event); /* On utilise PollEvent et non WaitEvent pour ne pas bloquer le programme */
         switch(event.type)
         {
@@ -237,8 +237,8 @@ int main(int argc, char **argv)
 					{
 						if(event.button.y>((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)) && event.button.y<(((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)+(HAUTEUR_LOG/2)-(MARGE_ECRAN/2))))
 						{
-							system("firefox graphique/images/HELP.bmp");	
-							//system("gedit HELP");
+							system("firefox graphique/images/HELP.bmp&");	
+							//system("gedit HELP&");
 
 						}
 					}
@@ -289,7 +289,6 @@ int main(int argc, char **argv)
   	{
 	 	case 0:
 			tab_robot[9].exist = 0;
-
 		break;
 
 		case 1:
@@ -300,14 +299,6 @@ int main(int argc, char **argv)
 	}
 
 
-	/*simu_move_robot(tab_robot,7,0.8,135*M_PI/180);
-	simu_move_robot(tab_robot,9,1,-M_PI/2);
-	simu_move_robot(tab_robot,2,1,90*M_PI/180);
-
-	simu_move_robot(tab_robot,8,0,0);
-	simu_missile_shoot(tab_robot, 0, tab_missile,0);
-	simu_missile_shoot(tab_robot, 1, tab_missile,-M_PI);
-*/
 	//initialisation des murs exterieurs
 	creer_mur(tab_mur,0,0,0,HAUTEUR_TERRAIN);
 	creer_mur(tab_mur,0,HAUTEUR_TERRAIN,LARGEUR_TERRAIN,HAUTEUR_TERRAIN);
@@ -323,7 +314,8 @@ int main(int argc, char **argv)
 		//mur level 1
 			creer_mur(tab_mur,0,HAUTEUR_TERRAIN/2,LARGEUR_TERRAIN/2,HAUTEUR_TERRAIN/2);
 			creer_mur(tab_mur,LARGEUR_TERRAIN/2,HAUTEUR_TERRAIN/4,LARGEUR_TERRAIN,HAUTEUR_TERRAIN/4);
-			creer_mur(tab_mur,LARGEUR_TERRAIN/2,3*HAUTEUR_TERRAIN/4,LARGEUR_TERRAIN,3*HAUTEUR_TERRAIN/4);                         
+			creer_mur(tab_mur,LARGEUR_TERRAIN/2,3*HAUTEUR_TERRAIN/4,LARGEUR_TERRAIN,3*HAUTEUR_TERRAIN/4);    
+                    
 	  	break;
 
 		case 2:
@@ -345,15 +337,17 @@ int main(int argc, char **argv)
 		                
 	  	break;
 
-		case 4:
+		case 4:	
 		//mur level 4
+
+
 			creer_mur(tab_mur,0,HAUTEUR_TERRAIN,25*LARGEUR_TERRAIN/100,75*HAUTEUR_TERRAIN/100);
 			creer_mur(tab_mur,0,0,25*LARGEUR_TERRAIN/100,25*HAUTEUR_TERRAIN/100);
 			creer_mur(tab_mur,LARGEUR_TERRAIN,HAUTEUR_TERRAIN,75*LARGEUR_TERRAIN/100,75*HAUTEUR_TERRAIN/100);
 			creer_mur(tab_mur,LARGEUR_TERRAIN,0,75*LARGEUR_TERRAIN/100,25*HAUTEUR_TERRAIN/100);
 		
 			creer_mur(tab_mur,0,50*HAUTEUR_TERRAIN/100,30*LARGEUR_TERRAIN/100,50*HAUTEUR_TERRAIN/100);
-			creer_mur(tab_mur,LARGEUR_TERRAIN,50*HAUTEUR_TERRAIN/100,70*LARGEUR_TERRAIN/100,50*HAUTEUR_TERRAIN/100);
+			creer_mur(tab_mur,LARGEUR_TERRAIN,50*HAUTEUR_TERRAIN/100,70*LARGEUR_TERRAIN/100,50*HAUTEUR_TERRAIN/100); // mur défectueux le robot passe au travers
 			creer_mur(tab_mur,50*LARGEUR_TERRAIN/100,HAUTEUR_TERRAIN,50*LARGEUR_TERRAIN/100,75*HAUTEUR_TERRAIN/100);
 			creer_mur(tab_mur,50*LARGEUR_TERRAIN/100,0,50*LARGEUR_TERRAIN/100,25*HAUTEUR_TERRAIN/100);
 
@@ -366,79 +360,9 @@ int main(int argc, char **argv)
     	break;
   	}
   	
-  	// On libere le semaphore
 
-/*    int x_all,y_all,x_fin_all,y_fin_all;
-    //Murs aléatoires distance et pente 100% aléatoire
-    if (DIST_WALL_INIT == -1)
-    {
-        for(i=0;i<NB_WALL_INIT;i++)
-        {
-            creer_mur(tab_mur,rand() % LARGEUR_TERRAIN, rand() % HAUTEUR_TERRAIN, rand() % LARGEUR_TERRAIN,rand() % HAUTEUR_TERRAIN);
-        }
-    }
-    //Autant de pentes positives que negatives avec distance limitée
-    else
-    {
-        for(i=0;i<NB_WALL_INIT/2;i++)
-        {
-            x_fin_all = rand() % DIST_WALL_INIT;
-            y_fin_all = rand() % DIST_WALL_INIT;
-            x_all = rand() % LARGEUR_TERRAIN;
-            y_all = rand() % HAUTEUR_TERRAIN;
-            creer_mur(tab_mur,x_all,y_all,x_all+x_fin_all,y_all+y_fin_all);
-        }
-            for(i=0;i<NB_WALL_INIT/2;i++)
-        {
-            x_fin_all = rand() % DIST_WALL_INIT;
-            y_fin_all = rand() % DIST_WALL_INIT;
-            x_all = rand() % LARGEUR_TERRAIN;
-            y_all = rand() % HAUTEUR_TERRAIN;
-            creer_mur(tab_mur,x_all,y_all,x_all-x_fin_all,y_all+y_fin_all);
-        }
-    }
- */
-
-	// Robot manuel
+// Robot manuel
 	float vitesse_man = 0;
-
-
-
-/*******************Gestion bouton HELP: solution alternative*************************/
-// HELP button
-/*while(help)
-{
- 	SDL_PollEvent(&event); // On utilise PollEvent et non WaitEvent pour ne pas bloquer le programme 
-	switch(event.type)
-	{
-		case SDL_QUIT:
-			help = 0;
-		  	continuer = 0;
-		break;
-
-		case SDL_MOUSEBUTTONUP:  //Clic de la souris 
-			if(event.button.button == SDL_BUTTON_LEFT)
-			{
-
-				if(event.button.x>(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(MARGE_ECRAN/2)+(LARGEUR_SCORE/2)) && event.button.x<(LARGEUR_TERRAIN+(2*MARGE_ECRAN)+(LARGEUR_SCORE)))
-				{
-					if(event.button.y>((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)) && event.button.y<(((2*MARGE_ECRAN)+(HAUTEUR_TERRAIN)+(HAUTEUR_LOG/2)-(MARGE_ECRAN/2))))
-					{
-						system("firefox graphique/images/HELP.bmp");	
-						//system("gedit HELP");
-					//wait=1;
-					//continuer=1;
-					}
-				}
-			}
-		break;	
-	default:
-	break;
-	//wait=1;
-	//continuer=1;
-	}
-
-}*/
 	 
 
 while(continuer)

@@ -116,7 +116,7 @@ scan_allaround_result simu_scan_allaround(s_robot* tab_robot,s_mur* tab_mur,s_mi
                 //Adaptation missile entre 0 et 2PI
                 teta_missile = modulo_teta(teta_missile,0,2 * M_PI);
 
-                //test condition siur zone et distance
+                //test condition sur zone et distance
                 if (comprisentre(teta_missile,teta_1,teta_2))
                 {
                     if ((scan.zone_distance[zone_nb-1] > dist_missile) && (dist_robot <= SCAN_DIST_MAX))

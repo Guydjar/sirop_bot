@@ -1,5 +1,4 @@
-git clone git clone https://github.com/Guydjar/sirop_bot.git
-cloner le projet
+cloner le projet:git clone https://github.com/Guydjar/sirop_bot.git
 
 git status
 connaitre le statut (ecart des fichiers) -> si fichier en rouge suivre étapes 3 ou 3bis ci-dessous
